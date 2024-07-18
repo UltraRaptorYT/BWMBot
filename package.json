@@ -1,10 +1,10 @@
 {
-  "name": "telegram-bot-vercel-boilerplate",
-  "version": "1.1.0",
-  "description": "Telegram Bot Vercel Boilerplate",
+  "name": "bwm-bot",
+  "version": "1.0.0",
+  "description": "BWM Mid Autumn Festival Puzzle Hunt",
   "main": "src/index.ts",
-  "author": "Mark Pavlov (https://github.com/sollidy)",
-  "homepage": "https://github.com/sollidy/telegram-bot-vercel-boilerplate",
+  "author": "",
+  "homepage": "https://t.me/bwmonastery_bot",
   "dependencies": {
     "@vercel/node": "^3.0.28",
     "dotenv-cli": "^7.4.1",
