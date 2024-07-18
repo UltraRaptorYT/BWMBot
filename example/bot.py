@@ -11,6 +11,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_html(text="hello world!")
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_html(text="help me!")
+async def custom(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_html(text="custom text")
+
 
 async def bot_tele(text):
     # Create application
@@ -21,6 +24,7 @@ async def bot_tele(text):
     # Add handlers
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help))
+    application.add_handler(CommandHandler("custom", custom))
 
     # Start application
     await application.bot.set_webhook(url=getenv("webhook"))
