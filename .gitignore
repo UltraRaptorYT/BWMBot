@@ -2,8 +2,6 @@
 *.log
 *.pyc
 __pycache__
-db.sqlite3
-media
 
 # Environments 
 .env 
@@ -13,4 +11,3 @@ venv/
 ENV/ 
 env.bak/ 
 venv.bak/ 
-.vercel
