@@ -1,5 +1,5 @@
 import supabase from "../supabase";
-import { Context } from "telegraf";
+import { Context, Types } from "telegraf";
 import createDebug from "debug";
 
 const debug = createDebug("bot:utils");
@@ -37,23 +37,26 @@ export async function setUserStage(username: string, stage: number) {
   });
   if (error) {
     debug("setUserStage - failed to run");
+    console.log(error);
   }
 }
 
-export async function getCurrentStage(username: string): Promise<number> {
+export async function getCurrentProgress(
+  username: string
+): Promise<ProgressType> {
   const { data, error } = await supabase
     .from("bwm_progress")
     .select()
     .eq("username", username)
     .order("time_started", { ascending: false });
   if (error) {
-    debug("getCurrentStage - failed to run");
+    debug("getCurrentProgress - failed to run");
   }
   if (!data || data.length == 0) {
     await setUserStage(username, 1);
-    return await getCurrentStage(username);
+    return await getCurrentProgress(username);
   }
-  return data[0].stage;
+  return data[0];
 }
 
 export async function getStageName(stage: number): Promise<string> {
@@ -70,12 +73,31 @@ export async function getStageName(stage: number): Promise<string> {
   return data[0].stage;
 }
 
+export async function updateCompletedTime(progress_id: number) {
+  const { error } = await supabase
+    .from("bwm_progress")
+    .update({
+      time_completed: new Date(),
+    })
+    .eq("id", progress_id);
+  if (error) {
+    debug("updateCompletedTime - failed to run");
+    console.log(error);
+  }
+}
+
+interface SendMessageOptions {
+  delay?: number;
+  reply?: boolean;
+  extra?: Types.ExtraReplyMessage;
+}
+
 export async function sendMessage(
   ctx: Context,
   message: string,
-  reply: boolean = false
+  { delay = 0, reply = false, extra = {} }: SendMessageOptions = {}
 ) {
-  let extra: { [key: string]: any } = {};
+  const messageId = ctx.message?.message_id;
   if (message.startsWith("image:")) {
     await ctx.sendPhoto(message.replace("image:", ""));
   } else {
@@ -83,10 +105,33 @@ export async function sendMessage(
       const username = ctx.message?.from.username || "";
       message = message.replaceAll("{username}", username);
     }
-    if (reply) {
-      const messageId = ctx.message?.message_id;
+    if (reply && messageId) {
       extra["reply_parameters"] = { message_id: messageId };
     }
+    setTimeout(() => {}, delay);
     await ctx.reply(message, extra);
   }
 }
+
+export type StageType = {
+  intro?: string;
+  begin?: string;
+  error?: string;
+  rules?: string[];
+  key?: string;
+  correct?: string;
+  wrong?: string;
+  next?: string;
+  text?: string[];
+  info?: string[];
+  hint?: string;
+  extra?: Types.ExtraReplyMessage;
+};
+
+export type ProgressType = {
+  id: number;
+  username: string;
+  stage: number;
+  time_started: string;
+  time_completed?: string;
+};

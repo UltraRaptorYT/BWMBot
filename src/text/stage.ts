@@ -4,8 +4,13 @@ import stages from "../stages.json";
 import {
   checkUserExist,
   addUser,
-  getCurrentStage,
+  getCurrentProgress,
   getStageName,
+  StageType,
+  sendMessage,
+  setUserStage,
+  ProgressType,
+  updateCompletedTime,
 } from "../utils/utils";
 
 const debug = createDebug("bot:stage_text");
@@ -22,12 +27,52 @@ const stage = () => {
     if (!userExist) {
       await addUser(username);
     }
-    let stageVal = await getCurrentStage(username);
+    let progress = await getCurrentProgress(username);
+    let stageVal = progress.stage;
     let stageName = await getStageName(stageVal);
-    const stageData = stages[stageName as keyof typeof stages];
+    const stageData = stages[stageName as keyof typeof stages] as StageType;
     if (stageName == "start") {
       return await ctx.sendMessage(stages["start"]["error"]);
     }
+    if (stageData["key"] == ctx.text?.toLowerCase()) {
+      // Update Time
+      await updateCompletedTime(progress.id);
+      let wellDone = stageData["correct"] || stages["default"]["correct"];
+      await sendMessage(ctx, wellDone);
+      // Insert Info
+      if (stageData["info"]) {
+        for (let info of stageData["info"]) {
+          await sendMessage(ctx, info, { delay: 100 });
+        }
+      }
+      if (!["rules", "break"].includes(stageName)) {
+        await sendMessage(ctx, stages["default"]["next"], { delay: 100 });
+      }
+      await setUserStage(username, stageVal + 1);
+      // Insert Text
+      let newStageName = await getStageName(stageVal + 1);
+      const newStageData = stages[
+        newStageName as keyof typeof stages
+      ] as StageType;
+      if (newStageData["text"]) {
+        for (let text of newStageData["text"]) {
+          if (newStageName == "break" && newStageData["extra"]) {
+            await sendMessage(ctx, text, {
+              delay: 100,
+              extra: newStageData["extra"],
+            });
+          } else {
+            await sendMessage(ctx, text, { delay: 100 });
+          }
+        }
+      }
+      return;
+    }
+    if (stageVal > 1) {
+      let wrong = stageData["wrong"] || stages["default"]["wrong"];
+      return await sendMessage(ctx, wrong);
+    }
+    return await ctx.sendMessage(stages["start"]["error"]);
   };
 };
 
