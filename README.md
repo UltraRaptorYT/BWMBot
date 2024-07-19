@@ -1,14 +1,10 @@
-# Telegram Bot Vercel Boilerplate
+# BW Monastery Bot
 
-Telegram Bot Vercel Boilerplate based on Node.js and [Telegraf](https://github.com/telegraf/telegraf) framework.
-
-This template inspired by [Telegram Bot Boilerplate](https://github.com/yakovlevyuri/telegram-bot-boilerplate) for easily deploy to [Vercel](https://vercel.com).
-
-[![Live Demo](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@7rodma/deploy-a-serverless-telegram-chatbot-using-vercel-57665d942a58)
+Mid Autumn Festival Puzzle Hunt
 
 ## Before you start
 
-First rename `.env-sample` file to `.env` and fill in all necessary values.
+First rename `.env.sample` file to `.env` and fill in all necessary values.
 
 ```
 BOT_TOKEN="<YOUR_BOT_API_TOKEN>"
@@ -16,19 +12,37 @@ BOT_TOKEN="<YOUR_BOT_API_TOKEN>"
 
 ## Start your local server
 
+1. Install Node Packages
+
+```bash
+npm i
 ```
-yarn
-yarn dev
+
+2. Start Node Packages
+
+```bash
+npm start
 ```
 
 ## Production
 
-You can fork this template and do the necessary changes you need. Then you when are done with your changes simply goto [vercel git import](https://vercel.com/import/git).
+1. Install Vercel CLI
+```bash
+npm i -g vercel
+```
 
-Reference to [this update](https://vercel.com/docs/security/deployment-protection#migrating-to-standard-protection), you need turn off `Vercel Authentication`, Settings => Deployment Protection
+2. Login to Vercel using Vercel CLI
+```bash
+vercel login
+```
 
-Feel free to create PR!
+3. Deploy using Vercel CLI
+```bash
+vercel
+```
+
+4. To ensure deployment works, Turn off `Vercel Authentication`, Settings => Deployment Protection
 
 ## Demo
 
-You can see a working version of the bot at [@Node_api_m_bot](https://t.me/Node_api_m_bot)
+You can see a working version of the bot at [@bwmonastery_bot](https://t.me/bwmonastery_bot)
