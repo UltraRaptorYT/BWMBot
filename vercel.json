@@ -1,9 +1,14 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
     {
       "src": "api/**/*.ts",
       "use": "@vercel/node"
+    },
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -13,6 +18,17 @@
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.ts"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/api",
+      "permanent": false
     }
   ]
 }
