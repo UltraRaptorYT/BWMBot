@@ -7,11 +7,5 @@
       "destination": "api/index.ts"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
   "redirects": [{ "source": "/", "destination": "/api", "permanent": false }]
 }
