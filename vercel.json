@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "public": true,
   "builds": [
     { "src": "public/**/*", "use": "@vercel/static" },
     { "src": "api/**/*", "use": "@vercel/node" }
@@ -10,5 +9,5 @@
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/(.*)", "dest": "/public/$1" }
   ],
-  "redirects": [{ "source": "/", "destination": "/api", "permanent": false }]
+  "redirects": [{ "src": "/", "dest": "/api", "permanent": false }]
 }
