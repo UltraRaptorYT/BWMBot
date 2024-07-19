@@ -25,11 +25,8 @@ const stage = () => {
     let stageVal = await getCurrentStage(username);
     let stageName = await getStageName(stageVal);
     const stageData = stages[stageName as keyof typeof stages];
-    console.log(stageData);
     if (stageName == "start") {
-      await ctx.sendMessage(`Test Greetings, ${username}!`);
-    } else if (stageName == "setup") {
-      await ctx.sendMessage(`enter name Greetings, ${username}!`);
+      return await ctx.sendMessage(stages["start"]["error"]);
     }
   };
 };

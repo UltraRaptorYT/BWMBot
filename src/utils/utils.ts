@@ -20,7 +20,7 @@ export async function checkUserExist(username: string) {
 }
 
 export async function addUser(username: string) {
-  const { error } = await supabase.from("bwm_user").insert({
+  const { error } = await supabase.from("bwm_user").upsert({
     username: username,
   });
   if (error) {
@@ -39,7 +39,7 @@ export async function setUserStage(username: string, stage: number) {
   }
 }
 
-export async function getCurrentStage(username: string) {
+export async function getCurrentStage(username: string): Promise<number> {
   const { data, error } = await supabase
     .from("bwm_progress")
     .select()
@@ -48,8 +48,9 @@ export async function getCurrentStage(username: string) {
   if (error) {
     debug("getCurrentStage - failed to run");
   }
-  if (!data) {
-    return 1;
+  if (!data || data.length == 0) {
+    await setUserStage(username, 1);
+    return await getCurrentStage(username);
   }
   return data[0].stage;
 }
