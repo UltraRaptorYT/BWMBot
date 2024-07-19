@@ -2,7 +2,6 @@ import { VercelRequest, VercelResponse } from "@vercel/node";
 import { startVercel } from "../src";
 
 export default async function handle(req: VercelRequest, res: VercelResponse) {
-  console.log(req.url);
   try {
     await startVercel(req, res);
   } catch (e: any) {
