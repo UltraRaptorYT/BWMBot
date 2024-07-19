@@ -1,12 +1,9 @@
 {
   "version": 2,
   "public": true,
-  "builds": [{ "src": "*.*", "use": "@vercel/static" }],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "api/index.ts"
-    }
-  ],
-  "redirects": [{ "source": "/", "destination": "/api", "permanent": false }]
+  "builds": [{ "src": "public/**/*", "use": "@vercel/static" }],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
 }
