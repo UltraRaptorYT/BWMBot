@@ -1,4 +1,5 @@
 import supabase from "../supabase";
+import { Context } from "telegraf";
 import createDebug from "debug";
 
 const debug = createDebug("bot:utils");
@@ -67,4 +68,25 @@ export async function getStageName(stage: number): Promise<string> {
     return "start";
   }
   return data[0].stage;
+}
+
+export async function sendMessage(
+  ctx: Context,
+  message: string,
+  reply: boolean = false
+) {
+  let extra: { [key: string]: any } = {};
+  if (message.startsWith("image:")) {
+    await ctx.sendPhoto(message.replace("image:", ""));
+  } else {
+    if (message.includes("{username}")) {
+      const username = ctx.message?.from.username || "";
+      message = message.replaceAll("{username}", username);
+    }
+    if (reply) {
+      const messageId = ctx.message?.message_id;
+      extra["reply_parameters"] = { message_id: messageId };
+    }
+    await ctx.reply(message, extra);
+  }
 }
