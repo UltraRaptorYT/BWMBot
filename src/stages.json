@@ -1,0 +1,12 @@
+{
+  "start": {
+    "intro": "Hello {username}!\nWelcome to BW Monastery.\n\nI am \\_\\_\\_, your guide to puzzle hunt. `/begin`\n\n\n欢迎来到吉祥宝聚寺",
+    "begin": "Let's begin the puzzle hunt! Here are some rules"
+  },
+  "rules": {},
+  "s1": {},
+  "s2": {},
+  "s3": {},
+  "s4": {},
+  "break": {}
+}

@@ -3,10 +3,11 @@ import createDebug from "debug";
 
 const debug = createDebug("bot:greeting_text");
 
-const replyToMessage = (ctx: Context, messageId: number, string: string) =>
-  ctx.sendMessage(string, {
+const replyToMessage = (ctx: Context, messageId: number, string: string) => {
+  ctx.reply(string, {
     reply_parameters: { message_id: messageId },
   });
+};
 
 const greeting = () => async (ctx: Context) => {
   debug('Triggered "greeting" text command');

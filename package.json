@@ -6,6 +6,7 @@
   "author": "",
   "homepage": "https://t.me/bwmonastery_bot",
   "dependencies": {
+    "@supabase/supabase-js": "^2.44.4",
     "@vercel/node": "^3.0.28",
     "dotenv-cli": "^7.4.1",
     "telegraf": "^4.16.3"
