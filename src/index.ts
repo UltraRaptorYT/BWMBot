@@ -1,6 +1,6 @@
 import { Context, Telegraf } from "telegraf";
 
-import { start, hint } from "./commands";
+import { start, hint, test } from "./commands";
 import { stage } from "./text";
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import { development, production } from "./core";
@@ -20,6 +20,7 @@ export const bot = new Telegraf(BOT_TOKEN);
 
 bot.command("start", start());
 bot.command("hint", hint());
+bot.command("test", test());
 bot.on("message", stage());
 
 bot.action("start_puzzle_hunt", async (ctx: Context) => {
