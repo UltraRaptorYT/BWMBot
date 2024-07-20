@@ -120,7 +120,7 @@ export async function sendMessage(
     if (reply && messageId) {
       extra["reply_parameters"] = { message_id: messageId };
     }
-    setTimeout(() => {}, delay);
+    await new Promise((r) => setTimeout(r, delay));
     await ctx.replyWithMarkdownV2(message, extra);
   }
 }
