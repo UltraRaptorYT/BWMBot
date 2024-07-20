@@ -27,7 +27,9 @@
       "Stage 1:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",
       "image:https://bwm-bot.vercel.app/Clue%201.png"
     ],
-    "info": ["Stone Lions are"],
+    "info": [
+      "Stone Lions are symbols of protection (yin metal).the male lion represents power (yang metal) over the world in imperial china, while the female lion represents care (yang metal) for the souls in the building. "
+    ],
     "key": "left",
     "hint": "Look at the feet of the stone lions"
   },
@@ -35,7 +37,9 @@
     "text": [
       "Stage 2:\nYou head towards <b>LEFT</b> side of the Monastery and find a Buddha Statue with a BELL 🔔. Look carefully, how many yellow chinese knots are there? [Spell out the number]"
     ],
-    "info": ["Did you know that Kshitigarbha made a vow to only"],
+    "info": [
+      "Did you know Ksitigarhba made a vow to take the responsibility to guide all living beings in the six realms and only achieve Buddhahood and get out of the cycle of birth and rebirth until all hell beings are out of hell (yin earth)"
+    ],
     "key": "six",
     "hint": "Circumambulate around Kshitigarbha and you will find your answer"
   },
@@ -43,7 +47,9 @@
     "text": [
       "Stage 3:\nMaking your way towards the side gate, something sparkles at the corner of your eyes✨, lots of GEMS 💎💎💎 and GOLD 💰💵. There is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n"
     ],
-    "info": ["Did you know about huang cai sheng"],
+    "info": [
+      "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
+    ],
     "key": "mongoose",
     "hint": "Look for the label inside of the Yellow Dzambhala Statue"
   },
@@ -57,7 +63,9 @@
     "hint": "count"
   },
   "break": {
-    "text": ["Time for a break. Head up to Level 2's Kitchen and enjoy the snacks!"],
+    "text": [
+      "Time for a break. Head up to Level 2's Kitchen and enjoy the snacks!"
+    ],
     "extra": {
       "reply_markup": {
         "inline_keyboard": [
@@ -67,7 +75,10 @@
     }
   },
   "s5": {
-    "text": ["Stage 5:\nYou exit the kitchen and walk towards the Buddha Statue at the end of the corridor. It is Thousand-armed and Thousand-eyed Avalokiteshvara\n"],
+    "text": [
+      "Stage 5:\nYou exit the kitchen and walk towards the Buddha Statue at the end of the corridor. It is Thousand-armed and Thousand-eyed Avalokiteshvara. The multitude of hands and eyes is mesmerizing. \nEh, something is missing from my photo. Can you tell me what is it?",
+      "image:https://bwm-bot.vercel.app/Clue%205.jpeg"
+    ],
     "info": ["12"],
     "key": "beads",
     "hint": "count"

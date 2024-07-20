@@ -45,12 +45,12 @@ const stage = () => {
           await sendMessage(ctx, info);
         }
       }
-      if (!["rules", "break"].includes(stageName)) {
-        await sendMessage(ctx, stages["default"]["next"]);
-      }
       await setUserStage(username, stageVal + 1);
       // Insert Text
       let newStageName = await getStageName(stageVal + 1);
+      if (!["rules"].includes(stageName) || !["break"].includes(newStageName)) {
+        await sendMessage(ctx, stages["default"]["next"]);
+      }
       const newStageData = stages[
         newStageName as keyof typeof stages
       ] as StageType;
