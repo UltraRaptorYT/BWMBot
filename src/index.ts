@@ -1,6 +1,6 @@
 import { Context, Telegraf } from "telegraf";
 
-import { start, hint, test,skip } from "./commands";
+import { start, hint, test, skip, resend } from "./commands";
 import { stage } from "./text";
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import { development, production } from "./core";
@@ -21,6 +21,7 @@ export const bot = new Telegraf(BOT_TOKEN);
 bot.command("start", start());
 bot.command("hint", hint());
 bot.command("skip", skip());
+bot.command("resend", resend());
 bot.command("test", test());
 bot.on("message", stage());
 
