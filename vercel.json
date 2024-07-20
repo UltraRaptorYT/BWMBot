@@ -3,13 +3,19 @@
   "public": true,
   "rewrites": [
     {
-      "source": "/public/:path.*",
-      "destination": "/public/:path.*"
+      "source": "/public/(.*)",
+      "destination": "/public/$1"
     },
     {
       "source": "/(.*)",
-      "destination": "api/index.ts"
+      "destination": "/api/index.ts"
     }
   ],
-  "redirects": [{ "source": "/", "destination": "/api", "permanent": false }]
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/api",
+      "permanent": false
+    }
+  ]
 }
