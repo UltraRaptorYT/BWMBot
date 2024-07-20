@@ -24,39 +24,39 @@
   },
   "s1": {
     "text": [
-      "Stage 1:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find a 👶🏻🦁🍼?\n\n仔细看图片，它会引导您到达该位置。面对大殿时，你能在哪一侧找到👶🏻🦁🍼？",
+      "Stage 1:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",
       "image:https://bwm-bot.vercel.app/Clue%201.png"
     ],
     "info": ["Stone Lions are"],
     "key": "left",
-    "hint": "Look for a the feet of the stone lions"
+    "hint": "Look at the feet of the stone lions"
   },
   "s2": {
     "text": [
-      "Stage 2:\nYou head towards ________ side of the Monastery and find a Bell. How many does yellow shape Kshitigarbha have?"
+      "Stage 2:\nYou head towards <b>LEFT</b> side of the Monastery and find a Buddha Statue with a BELL 🔔. Look carefully, how many yellow chinese knots are there? [Spell out the number]"
     ],
     "info": ["Did you know that Kshitigarbha made a vow to only"],
-    "key": "6",
+    "key": "six",
     "hint": "Circumambulate around Kshitigarbha and you will find your answer"
   },
   "s3": {
-    "text": ["Stage 3:Something is spewing GOLD, what creature is that?\n"],
-    "info": ["12"],
+    "text": ["Stage 3:\nSomething sparkles at the corner of your eyes✨, there is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n"],
+    "info": ["Did you know about huang cai sheng"],
     "key": "mongoose",
-    "hint": "look for the label"
+    "hint": "Look for the label inside of the Yellow Dzambhala"
   },
   "s4": {
-    "text": ["Stage 4: You \n"],
-    "info": ["12"],
+    "text": ["Stage 4:\nLet's RAMP UP the difficulty, look to "],
+    "info": ["Time capsule was done in 2022"],
     "key": "10",
     "hint": "count"
   },
   "break": {
-    "text": ["Time for a break"],
+    "text": ["Time for a break. Head up to Level 2's kitchen"],
     "extra": {
       "reply_markup": {
         "inline_keyboard": [
-          [{ "text": "End Break 开始", "callback_data": "end_break" }]
+          [{ "text": "End Break 结束休息", "callback_data": "end_break" }]
         ]
       }
     }
