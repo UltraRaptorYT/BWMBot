@@ -1,25 +1,25 @@
 {
   "default": {
-    "correct": "Well Done\\!",
-    "wrong": "Try Again\\!",
+    "correct": "Well Done!",
+    "wrong": "Try Again!",
     "next": "The next stage will be arriving shortly...",
-    "hint": "Sorry there is no hint\\!",
+    "hint": "Sorry there is no hint!",
     "skip": "Skip stage"
   },
   "start": {
-    "intro": "Hello {username}\\!\nWelcome to BW Monastery.\n\nI am \\_\\_\\_, your guide to puzzle hunt. `/begin`\n\n\n欢迎来到吉祥宝聚寺",
+    "intro": "Hello {username}!\nWelcome to BW Monastery.\n\nI am \\_\\_\\_, your guide to puzzle hunt. `/begin`\n\n\n欢迎来到吉祥宝聚寺",
     "error": "Start bot by /start"
   },
   "rules": {
     "rules": [
-      "Let's begin the puzzle hunt\\! Here are some rules",
-      "🧑‍🏫 [Rules: 1/3]\nNow let's go through some ground rules before we hand you over to Void Deck Cat. Take your time to read them carefully, as your game timer has not started yet.\n\n🐾 Your game is a trail of Stages with scheduled break(s) in between. All team members will receive the Stages from me at the same time, but only 1 team member is required to send a response at any given time to proceed. Please make sure only one person from the team sends me a message at any one time, or you will confuse the Cat and she may penalise you for it\\! Please be patient with the Cat as she ponders your answers.",
-      "🧑‍🏫 [Rules: 2/3]\nYour game will be timed. Each incorrect answer adds a penalty of 5min to your final timing, so answer carefully\\! Need help solving a Stage? Hints are available, but at a cost. Please refer to the image below for details.\n\nThe timer will be paused during breaks, so you can properly relax 😉",
+      "Let's begin the puzzle hunt! Here are some rules",
+      "🧑‍🏫 [Rules: 1/3]\nNow let's go through some ground rules before we hand you over to Void Deck Cat. Take your time to read them carefully, as your game timer has not started yet.\n\n🐾 Your game is a trail of Stages with scheduled break(s) in between. All team members will receive the Stages from me at the same time, but only 1 team member is required to send a response at any given time to proceed. Please make sure only one person from the team sends me a message at any one time, or you will confuse the Cat and she may penalise you for it! Please be patient with the Cat as she ponders your answers.",
+      "🧑‍🏫 [Rules: 2/3]\nYour game will be timed. Each incorrect answer adds a penalty of 5min to your final timing, so answer carefully! Need help solving a Stage? Hints are available, but at a cost. Please refer to the image below for details.\n\nThe timer will be paused during breaks, so you can properly relax 😉",
       "image:https://bwm-bot.vercel.app/BWM.png",
-      "🧑‍🏫 [Rules: 3/3]\nFinally, stay in public spaces, blend into your environment, and be discreet in your discussions - you never know if another team is listening in\\! In case of emergencies, tell me 'sos' and one of the Hidden Singapore humans will get in touch.\n\nYou do not need to enter any fenced premises or private property unless specifically asked to.\n\nFeel free to also send in your selfies and photos through the race and have a chance to win our Selfie of the Month contest.\n\nReady for your first Stage? Team captain, tell me *'UNDERSTOOD'* and I will hand you over to Void Deck Cat. Good luck."
+      "🧑‍🏫 [Rules: 3/3]\nFinally, stay in public spaces, blend into your environment, and be discreet in your discussions - you never know if another team is listening in! In case of emergencies, tell me 'sos' and one of the Hidden Singapore humans will get in touch.\n\nYou do not need to enter any fenced premises or private property unless specifically asked to.\n\nFeel free to also send in your selfies and photos through the race and have a chance to win our Selfie of the Month contest.\n\nReady for your first Stage? Team captain, tell me <b>'UNDERSTOOD'</b> and I will hand you over to Void Deck Cat. Good luck."
     ],
     "key": "understood",
-    "correct": "Let's Start\\!",
+    "correct": "Let's Start!",
     "wrong": "Please enter 'UNDERSTOOD'"
   },
   "s1": {
@@ -33,7 +33,7 @@
   },
   "s2": {
     "text": [
-      "Stage 2:\nYou head towards \\_\\_\\_ side of the Monastery and find a Bell. How many does yellow shape Kshitigarbha have?"
+      "Stage 2:\nYou head towards ________ side of the Monastery and find a Bell. How many does yellow shape Kshitigarbha have?"
     ],
     "info": ["Did you know that Kshitigarbha made a vow to only"],
     "key": "6",

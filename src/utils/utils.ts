@@ -121,7 +121,7 @@ export async function sendMessage(
       extra["reply_parameters"] = { message_id: messageId };
     }
     await new Promise((r) => setTimeout(r, delay));
-    await ctx.replyWithMarkdownV2(message, extra);
+    await ctx.replyWithHTML(message, extra);
   }
 }
 
