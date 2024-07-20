@@ -3,7 +3,11 @@
   "public": true,
   "rewrites": [
     {
-      "source": "/((?!.*\\.(jpg|jpeg|png|gif|css|js)).*)$",
+      "source": "/public/:path.*",
+      "destination": "/public/:path.*"
+    },
+    {
+      "source": "/(.*)",
       "destination": "api/index.ts"
     }
   ],
