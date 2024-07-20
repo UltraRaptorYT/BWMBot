@@ -38,7 +38,7 @@ bot.action("start_puzzle_hunt", async (ctx: Context) => {
     const stageData = stages[stageName as keyof typeof stages] as StageType;
     if (stageData["rules"]) {
       for (let rule of stageData["rules"]) {
-        await sendMessage(ctx, rule, { delay: 100 });
+        await sendMessage(ctx, rule);
       }
     }
   } catch (error) {
@@ -49,6 +49,10 @@ bot.action("start_puzzle_hunt", async (ctx: Context) => {
 bot.on("callback_query", function onCallbackQuery(callbackQuery) {
   // 'callbackQuery' is of type CallbackQuery
   console.log("query: ", callbackQuery);
+});
+
+bot.action("test", async (ctx: Context) => {
+  await sendMessage(ctx, "Testing Action");
 });
 
 bot.action("end_break", async (ctx: Context) => {
@@ -64,7 +68,7 @@ bot.action("end_break", async (ctx: Context) => {
   const stageData = stages[stageName as keyof typeof stages] as StageType;
   if (stageData["text"]) {
     for (let text of stageData["text"]) {
-      await sendMessage(ctx, text, { delay: 100 });
+      await sendMessage(ctx, text);
     }
   }
 });

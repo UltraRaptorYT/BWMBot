@@ -42,11 +42,11 @@ const stage = () => {
       // Insert Info
       if (stageData["info"]) {
         for (let info of stageData["info"]) {
-          await sendMessage(ctx, info, { delay: 100 });
+          await sendMessage(ctx, info);
         }
       }
       if (!["rules", "break"].includes(stageName)) {
-        await sendMessage(ctx, stages["default"]["next"], { delay: 100 });
+        await sendMessage(ctx, stages["default"]["next"]);
       }
       await setUserStage(username, stageVal + 1);
       // Insert Text
@@ -58,11 +58,10 @@ const stage = () => {
         for (let text of newStageData["text"]) {
           if (newStageName == "break" && newStageData["extra"]) {
             await sendMessage(ctx, text, {
-              delay: 100,
               extra: newStageData["extra"],
             });
           } else {
-            await sendMessage(ctx, text, { delay: 100 });
+            await sendMessage(ctx, text);
           }
         }
       }
