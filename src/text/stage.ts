@@ -34,7 +34,7 @@ const stage = () => {
     if (stageName == "start") {
       return await ctx.sendMessage(stages["start"]["error"]);
     }
-    if (stageData["key"] == ctx.text?.toLowerCase()) {
+    if (stageData["key"] == ctx.text?.toLowerCase().trim()) {
       // Update Time
       await updateCompletedTime(progress.id);
       let wellDone = stageData["correct"] || stages["default"]["correct"];

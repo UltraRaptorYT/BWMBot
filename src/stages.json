@@ -40,19 +40,24 @@
     "hint": "Circumambulate around Kshitigarbha and you will find your answer"
   },
   "s3": {
-    "text": ["Stage 3:\nSomething sparkles at the corner of your eyes✨, there is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n"],
+    "text": [
+      "Stage 3:\nMaking your way towards the side gate, something sparkles at the corner of your eyes✨, lots of GEMS 💎💎💎 and GOLD 💰💵. There is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n"
+    ],
     "info": ["Did you know about huang cai sheng"],
     "key": "mongoose",
-    "hint": "Look for the label inside of the Yellow Dzambhala"
+    "hint": "Look for the label inside of the Yellow Dzambhala Statue"
   },
   "s4": {
-    "text": ["Stage 4:\nLet's RAMP UP the difficulty, look to "],
+    "text": [
+      "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?",
+      "image:https://bwm-bot.vercel.app/Clue%204.png"
+    ],
     "info": ["Time capsule was done in 2022"],
-    "key": "10",
+    "key": "preservation",
     "hint": "count"
   },
   "break": {
-    "text": ["Time for a break. Head up to Level 2's kitchen"],
+    "text": ["Time for a break. Head up to Level 2's Kitchen and enjoy the snacks!"],
     "extra": {
       "reply_markup": {
         "inline_keyboard": [
@@ -62,7 +67,7 @@
     }
   },
   "s5": {
-    "text": ["Stage 5:\n"],
+    "text": ["Stage 5:\nYou exit the kitchen and walk towards the Buddha Statue at the end of the corridor. It is Thousand-armed and Thousand-eyed Avalokiteshvara\n"],
     "info": ["12"],
     "key": "beads",
     "hint": "count"
