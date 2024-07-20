@@ -25,7 +25,12 @@ const start = () => async (ctx: Context) => {
       parse_mode: "Markdown",
       reply_markup: {
         inline_keyboard: [
-          [{ text: "Begin 开始", callback_data: "start_puzzle_hunt" }],
+          [
+            {
+              text: "Begin 开始",
+              callback_data: "start_puzzle_hunt",
+            },
+          ],
         ],
       },
     });
