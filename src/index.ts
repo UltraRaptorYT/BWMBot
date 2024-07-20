@@ -25,9 +25,6 @@ bot.on("message", stage());
 
 bot.action("start_puzzle_hunt", async (ctx: Context) => {
   try {
-    let val = await ctx.answerCbQuery();
-    console.log(val);
-
     const username = ctx.from?.username || "";
     let stage = Object.keys(stages).indexOf("start");
     if (stage == -1) {
@@ -47,17 +44,11 @@ bot.action("start_puzzle_hunt", async (ctx: Context) => {
   }
 });
 
-bot.on("callback_query", function onCallbackQuery(callbackQuery) {
-  // 'callbackQuery' is of type CallbackQuery
-  console.log("query: ", callbackQuery);
-});
-
 bot.action("test_bot", async (ctx: Context) => {
   await sendMessage(ctx, "Testing Action");
 });
 
 bot.action("end_break", async (ctx: Context) => {
-  await ctx.answerCbQuery();
   const username = ctx.from?.username || "";
   let stage = Object.keys(stages).indexOf("break");
   if (stage == -1) {
