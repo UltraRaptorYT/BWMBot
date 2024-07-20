@@ -52,7 +52,7 @@ bot.on("callback_query", function onCallbackQuery(callbackQuery) {
   console.log("query: ", callbackQuery);
 });
 
-bot.action("test", async (ctx: Context) => {
+bot.action("test_bot", async (ctx: Context) => {
   await sendMessage(ctx, "Testing Action");
 });
 
