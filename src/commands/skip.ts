@@ -9,21 +9,25 @@ import {
 } from "../utils/utils";
 import stages from "../stages.json";
 
-const debug = createDebug("bot:hint_command");
+const debug = createDebug("bot:skip_command");
 
-const hint = () => async (ctx: Context) => {
+const skip = () => async (ctx: Context) => {
+  //! Logic to be implemented
+  /*
+  Check if hint is used []
+  */
   const username = ctx.message?.from.username || "";
-  debug(`Triggered "hint" command`);
+  debug(`Triggered "skip" command`);
   let progress = await getCurrentProgress(username);
   let stageVal = progress.stage;
   let stageName = await getStageName(stageVal);
   const stageData = stages[stageName as keyof typeof stages] as StageType;
-  if (stageData["hint"]) {
-    await sendMessage(ctx, stageData["hint"], { reply: true });
-    await addHint(username, stageVal, "hint");
+  if (stageData["skip"]) {
+    await sendMessage(ctx, stageData["skip"], { reply: true });
+    await addHint(username, stageVal, "skip");
   } else {
-    await sendMessage(ctx, stages["default"]["hint"], { reply: true });
+    await sendMessage(ctx, stages["default"]["skip"], { reply: true });
   }
 };
 
-export { hint };
+export { skip };

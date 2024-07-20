@@ -86,6 +86,18 @@ export async function updateCompletedTime(progress_id: number) {
   }
 }
 
+export async function addHint(username: string, stage: number, type: string) {
+  const { error } = await supabase.from("bwm_hint").insert({
+    username: username,
+    stage: stage,
+    type: type,
+  });
+  if (error) {
+    debug("addHint - failed to run");
+    console.log(error);
+  }
+}
+
 interface SendMessageOptions {
   delay?: number;
   reply?: boolean;
@@ -109,7 +121,7 @@ export async function sendMessage(
       extra["reply_parameters"] = { message_id: messageId };
     }
     setTimeout(() => {}, delay);
-    await ctx.reply(message, extra);
+    await ctx.replyWithMarkdownV2(message, extra);
   }
 }
 
@@ -126,6 +138,7 @@ export type StageType = {
   info?: string[];
   hint?: string;
   extra?: Types.ExtraReplyMessage;
+  skip?: string;
 };
 
 export type ProgressType = {

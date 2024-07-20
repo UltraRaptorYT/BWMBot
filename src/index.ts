@@ -1,6 +1,6 @@
 import { Context, Telegraf } from "telegraf";
 
-import { start, hint, test } from "./commands";
+import { start, hint, test,skip } from "./commands";
 import { stage } from "./text";
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import { development, production } from "./core";
@@ -20,6 +20,7 @@ export const bot = new Telegraf(BOT_TOKEN);
 
 bot.command("start", start());
 bot.command("hint", hint());
+bot.command("skip", skip());
 bot.command("test", test());
 bot.on("message", stage());
 
@@ -36,7 +37,7 @@ bot.action("start_puzzle_hunt", async (ctx: Context) => {
     const stageData = stages[stageName as keyof typeof stages] as StageType;
     if (stageData["rules"]) {
       for (let rule of stageData["rules"]) {
-        await sendMessage(ctx, rule);
+        await sendMessage(ctx, rule, { delay: 100 });
       }
     }
   } catch (error) {
@@ -60,7 +61,7 @@ bot.action("end_break", async (ctx: Context) => {
   const stageData = stages[stageName as keyof typeof stages] as StageType;
   if (stageData["text"]) {
     for (let text of stageData["text"]) {
-      await sendMessage(ctx, text);
+      await sendMessage(ctx, text, { delay: 100 });
     }
   }
 });
