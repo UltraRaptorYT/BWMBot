@@ -102,5 +102,8 @@
     "info": ["12"],
     "key": "lineage",
     "hint": ["count"]
+  },
+  "end": {
+    "text": ["The End"]
   }
 }
