@@ -27,8 +27,9 @@ const hint = () => async (ctx: Context) => {
     } else {
       await sendMessage(ctx, stages["default"]["hintUsed"], { reply: true });
     }
-    console.log(stageData["hint"]);
-    await sendMessage(ctx, stageData["hint"]);
+    for (let hint of stageData["hint"]) {
+      await sendMessage(ctx, hint);
+    }
   } else {
     await sendMessage(ctx, stages["default"]["hint"], { reply: true });
   }
