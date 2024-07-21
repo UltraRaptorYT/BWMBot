@@ -6,6 +6,7 @@ import {
   sendMessage,
   StageType,
   addHint,
+  checkHintUsed,
 } from "../utils/utils";
 import stages from "../stages.json";
 
@@ -18,9 +19,15 @@ const hint = () => async (ctx: Context) => {
   let stageVal = progress.stage;
   let stageName = await getStageName(stageVal);
   const stageData = stages[stageName as keyof typeof stages] as StageType;
+  let hintUsed = await checkHintUsed(username, stageVal, progress.time_started);
   if (stageData["hint"]) {
+    if (!hintUsed) {
+      await addHint(username, stageVal, "hint");
+      await sendMessage(ctx, stages["default"]["hintNotUsed"], { reply: true });
+    } else {
+      await sendMessage(ctx, stages["default"]["hintUsed"], { reply: true });
+    }
     await sendMessage(ctx, stageData["hint"], { reply: true });
-    await addHint(username, stageVal, "hint");
   } else {
     await sendMessage(ctx, stages["default"]["hint"], { reply: true });
   }

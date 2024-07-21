@@ -98,6 +98,32 @@ export async function addHint(username: string, stage: number, type: string) {
   }
 }
 
+export async function checkHintUsed(
+  username: string,
+  stage: number,
+  time_started: string
+) {
+  const { data, error } = await supabase
+    .from("bwm_hint")
+    .select()
+    .eq("username", username)
+    .eq("stage", stage)
+    .eq("type", "hint")
+    .order("created_at", { ascending: false });
+  if (error) {
+    debug("checkHintUsed - failed to run");
+    console.log(error);
+    return false;
+  }
+  if (!data || data.length == 0) {
+    return false;
+  }
+  if (new Date(time_started) > new Date(data[0].created_at)) {
+    return false;
+  }
+  return true;
+}
+
 interface SendMessageOptions {
   delay?: number;
   reply?: boolean;
@@ -139,6 +165,8 @@ export type StageType = {
   hint?: string;
   extra?: Types.ExtraReplyMessage;
   skip?: string;
+  hintNotUsed?: string;
+  hintUsed?: string;
 };
 
 export type ProgressType = {

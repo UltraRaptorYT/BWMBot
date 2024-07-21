@@ -4,7 +4,9 @@
     "wrong": "Try Again!",
     "next": "The next stage will be arriving shortly...",
     "hint": "Sorry there is no hint!",
-    "skip": "Skip stage"
+    "skip": "Skip stage",
+    "hintNotUsed": "NOTE USING HINT WILL USE ADD 5 MINUTES TO YOUR TOTAL TIME",
+    "hintUsed": "Resending HINT, 5 MINUTES will not be added to your total time"
   },
   "start": {
     "intro": "Hello {username}!\nWelcome to BW Monastery.\n\nI am \\_\\_\\_, your guide to puzzle hunt. `/begin`\n\n\n欢迎来到吉祥宝聚寺",
@@ -31,17 +33,17 @@
       "Stone Lions are symbols of protection (yin metal).the male lion represents power (yang metal) over the world in imperial china, while the female lion represents care (yang metal) for the souls in the building. "
     ],
     "key": "left",
-    "hint": "Look at the feet of the stone lions"
+    "hint": ["Look at the feet of the stone lions"]
   },
   "s2": {
     "text": [
-      "Stage 2:\nYou head towards <b>LEFT</b> side of the Monastery and find a Buddha Statue with a BELL 🔔. Look carefully, how many yellow chinese knots are there? [Spell out the number]"
+      "Stage 2:\nYou head towards <b>LEFT</b> side of the Monastery and find a Buddha Statue with a BELL 🔔. Look carefully, how many yellow chinese knots are there? [Spell out the number eg. 1 - one 2 - two]"
     ],
     "info": [
       "Did you know Ksitigarhba made a vow to take the responsibility to guide all living beings in the six realms and only achieve Buddhahood and get out of the cycle of birth and rebirth until all hell beings are out of hell (yin earth)"
     ],
-    "key": "six",
-    "hint": "Circumambulate around Kshitigarbha and you will find your answer"
+    "key": "seven",
+    "hint": ["Circumambulate around Kshitigarbha and you will find your answer"]
   },
   "s3": {
     "text": [
@@ -51,7 +53,7 @@
       "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
     ],
     "key": "mongoose",
-    "hint": "Look for the label inside of the Yellow Dzambhala Statue"
+    "hint": ["Look for the label inside of the Yellow Dzambhala Statue"]
   },
   "s4": {
     "text": [
@@ -60,7 +62,7 @@
     ],
     "info": ["Time capsule was done in 2022"],
     "key": "preservation",
-    "hint": "count"
+    "hint": ["count"]
   },
   "break": {
     "text": [
@@ -81,24 +83,24 @@
     ],
     "info": ["12"],
     "key": "beads",
-    "hint": "count"
+    "hint": ["count"]
   },
   "s6": {
     "text": ["Stage 6:\n"],
     "info": ["12"],
     "key": "5",
-    "hint": "count"
+    "hint": ["count"]
   },
   "s7": {
     "text": ["Stage 7:\n"],
     "info": ["12"],
     "key": "i",
-    "hint": "count"
+    "hint": ["count"]
   },
   "s8": {
     "text": ["Stage 8:\n"],
     "info": ["12"],
     "key": "lineage",
-    "hint": "count"
+    "hint": ["count"]
   }
 }
