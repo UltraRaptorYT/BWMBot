@@ -5,6 +5,8 @@ import {
   getStageName,
   sendMessage,
   StageType,
+  checkUserExist,
+  addUser,
 } from "../utils/utils";
 import stages from "../stages.json";
 
@@ -12,6 +14,10 @@ const debug = createDebug("bot:resend_command");
 
 const resend = () => async (ctx: Context) => {
   const username = ctx.message?.from.username || "";
+  const userExist = await checkUserExist(username);
+  if (!userExist) {
+    await addUser(username);
+  }
   debug(`Triggered "resend" command`);
   let progress = await getCurrentProgress(username);
   let stageVal = progress.stage;
