@@ -11,6 +11,7 @@ import {
   setUserStage,
   ProgressType,
   updateCompletedTime,
+  logAnswer,
 } from "../utils/utils";
 
 const debug = createDebug("bot:stage_text");
@@ -34,7 +35,11 @@ const stage = () => {
     if (stageName == "start") {
       return await ctx.sendMessage(stages["start"]["error"]);
     }
-    if (stageData["key"] == ctx.text?.toLowerCase().trim()) {
+    let answer = ctx.text || "";
+    let isCorrect =
+      stageData["key"]?.includes(answer.toLowerCase().trim() || "") || false;
+    await logAnswer(username, stageVal, answer, isCorrect);
+    if (isCorrect) {
       // Update Time
       await updateCompletedTime(progress.id);
       let wellDone = stageData["correct"] || stages["default"]["correct"];

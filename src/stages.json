@@ -1,27 +1,26 @@
 {
   "default": {
-    "correct": "Well Done!",
+    "correct": "Well Done! 恭喜您答对了！",
     "wrong": "Try Again!",
-    "next": "The next stage will be arriving shortly...",
-    "hint": "Sorry there is no hint!",
+    "next": "The next stage will be arriving shortly...\n\n下一道题即将到来...",
+    "hint": "Sorry, there is no hint for this stage!\n\n对不起，这道题没有暗示！",
     "skip": "Skip stage",
-    "hintNotUsed": "NOTE USING HINT WILL USE ADD 5 MINUTES TO YOUR TOTAL TIME",
-    "hintUsed": "Resending HINT, 5 MINUTES will not be added to your total time"
+    "hintNotUsed": "NOTE, using the HINT will add <b>5 MINUTES</b> to your total time.\n\n注意使用暗示将会增加您的总时间<b>五分钟</b>。",
+    "hintUsed": "Resending HINT, <b>5 MINUTES</b> will not be added to your total time.\n\n重新发送暗示，您的总时间不会增加<b>五分钟</b>。"
   },
   "start": {
-    "intro": "Hello {username}!\nWelcome to BW Monastery.\n\nI am \\_\\_\\_, your guide to puzzle hunt. `/begin`\n\n\n欢迎来到吉祥宝聚寺",
+    "intro": "Hello {username}!\nWelcome to BW Monastery.\n\nI am \\_\\_\\_, your guide to puzzle hunt.\n\n\n欢迎来到吉祥宝聚寺",
     "error": "Start bot by /start"
   },
   "rules": {
     "rules": [
       "Let's begin the puzzle hunt! Here are some rules",
-      "🧑‍🏫 [Rules: 1/3]\nNow let's go through some ground rules before we hand you over to Void Deck Cat. Take your time to read them carefully, as your game timer has not started yet.\n\n🐾 Your game is a trail of Stages with scheduled break(s) in between. All team members will receive the Stages from me at the same time, but only 1 team member is required to send a response at any given time to proceed. Please make sure only one person from the team sends me a message at any one time, or you will confuse the Cat and she may penalise you for it! Please be patient with the Cat as she ponders your answers.",
+      "🧑‍🏫 [Rules: 1/3]\nNow let's go through some ground rules. Take your time to read them carefully, as your game timer has not started yet.\n\n🐾 Your game is a trail of Stages with scheduled break(s) in between. Please make sure only one person from the team sends me a message at any one time, or you will confuse the Cat and she may penalise you for it! Please be patient with the Cat as she ponders your answers.",
       "🧑‍🏫 [Rules: 2/3]\nYour game will be timed. Each incorrect answer adds a penalty of 5min to your final timing, so answer carefully! Need help solving a Stage? Hints are available, but at a cost. Please refer to the image below for details.\n\nThe timer will be paused during breaks, so you can properly relax 😉",
-      "image:https://bwm-bot.vercel.app/BWM.png",
-      "<b>bold</b>, <strong>bold</strong>\n<i>italic</i>, <em>italic</em>\n<u>underline</u>, <ins>underline</ins>\n<s>strikethrough</s>, <strike>strikethrough</strike>, <del>strikethrough</del>\n<span class=\"tg-spoiler\">spoiler</span>, <tg-spoiler>spoiler</tg-spoiler>\n<b>bold <i>italic bold <s>italic bold strikethrough <span class=\"tg-spoiler\">italic bold strikethrough spoiler</span></s> <u>underline italic bold</u></i> bold</b>\n<a href=\"http://www.example.com/\">inline URL</a>\n<code>inline fixed-width code</code>\n<pre>pre-formatted fixed-width code block</pre>\n<pre><code class=\"language-python\">pre-formatted fixed-width code block written in the Python programming language</code></pre>",
+      "image:https://bwm-bot.vercel.app/Rules.png",
       "🧑‍🏫 [Rules: 3/3]\nFinally, stay in public spaces, blend into your environment, and be discreet in your discussions - you never know if another team is listening in! In case of emergencies, tell me 'sos' and one of the Hidden Singapore humans will get in touch.\n\nYou do not need to enter any fenced premises or private property unless specifically asked to.\n\nFeel free to also send in your selfies and photos through the race and have a chance to win our Selfie of the Month contest.\n\nReady for your first Stage? Team captain, tell me <b>'UNDERSTOOD'</b> and I will hand you over to Void Deck Cat. Good luck."
     ],
-    "key": "understood",
+    "key": ["understood"],
     "correct": "Let's Start!",
     "wrong": "Please enter 'UNDERSTOOD'"
   },
@@ -33,7 +32,7 @@
     "info": [
       "Stone Lions are symbols of protection (yin metal).the male lion represents power (yang metal) over the world in imperial china, while the female lion represents care (yang metal) for the souls in the building. "
     ],
-    "key": "left",
+    "key": ["left"],
     "hint": ["Look at the feet of the stone lions"]
   },
   "s2": {
@@ -43,7 +42,7 @@
     "info": [
       "Did you know Ksitigarhba made a vow to take the responsibility to guide all living beings in the six realms and only achieve Buddhahood and get out of the cycle of birth and rebirth until all hell beings are out of hell (yin earth)"
     ],
-    "key": "seven",
+    "key": ["seven"],
     "hint": ["Circumambulate around Kshitigarbha and you will find your answer"]
   },
   "s3": {
@@ -53,7 +52,7 @@
     "info": [
       "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
     ],
-    "key": "mongoose",
+    "key": ["mongoose"],
     "hint": ["Look for the label inside of the Yellow Dzambhala Statue"]
   },
   "s4": {
@@ -62,7 +61,7 @@
       "image:https://bwm-bot.vercel.app/Clue4.png"
     ],
     "info": ["Time capsule was done in 2022"],
-    "key": "preservation",
+    "key": ["preservation"],
     "hint": ["count"]
   },
   "break": {
@@ -83,7 +82,7 @@
       "image:https://bwm-bot.vercel.app/Clue5.jpeg"
     ],
     "info": ["12"],
-    "key": "beads",
+    "key": ["beads"],
     "hint": [
       "Look closer it is something GREEN",
       "image:https://bwm-bot.vercel.app/Hint%205.jpeg"
@@ -92,19 +91,19 @@
   "s6": {
     "text": ["Stage 6:\n"],
     "info": ["12"],
-    "key": "5",
+    "key": ["5"],
     "hint": ["count"]
   },
   "s7": {
     "text": ["Stage 7:\n"],
     "info": ["12"],
-    "key": "i",
+    "key": ["i"],
     "hint": ["count"]
   },
   "s8": {
     "text": ["Stage 8:\n"],
     "info": ["12"],
-    "key": "lineage",
+    "key": ["lineage"],
     "hint": ["count"]
   },
   "end": {

@@ -124,6 +124,24 @@ export async function checkHintUsed(
   return true;
 }
 
+export async function logAnswer(
+  username: string,
+  stage: number,
+  answer: string,
+  isCorrect: boolean
+) {
+  const { error } = await supabase.from("bwm_log").insert({
+    username: username,
+    stage: stage,
+    answer: answer,
+    isCorrect: isCorrect,
+  });
+  if (error) {
+    debug("logAnswer - failed to run");
+    console.log(error);
+  }
+}
+
 interface SendMessageOptions {
   delay?: number;
   reply?: boolean;
@@ -156,7 +174,7 @@ export type StageType = {
   begin?: string;
   error?: string;
   rules?: string[];
-  key?: string;
+  key?: string[];
   correct?: string;
   wrong?: string;
   next?: string;
