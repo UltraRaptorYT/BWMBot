@@ -26,7 +26,7 @@
   },
   "s1": {
     "text": [
-      "Stage 1:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",
+      "Stage 1:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n<hr/>\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",
       "image:https://bwm-bot.vercel.app/Clue%201.png"
     ],
     "info": [
@@ -58,7 +58,7 @@
   "s4": {
     "text": [
       "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?",
-      "image:https://bwm-bot.vercel.app/Clue%204.png"
+      "image:https://bwm-bot.vercel.app/Clue4.png"
     ],
     "info": ["Time capsule was done in 2022"],
     "key": "preservation",
