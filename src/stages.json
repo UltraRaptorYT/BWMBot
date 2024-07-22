@@ -83,7 +83,7 @@
     ],
     "info": ["12"],
     "key": "beads",
-    "hint": ["count"]
+    "hint": ["Look closer it is something GREEN", "image:https://bwm-bot.vercel.app/Hint%205.jpeg"]
   },
   "s6": {
     "text": ["Stage 6:\n"],
