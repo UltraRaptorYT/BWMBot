@@ -48,7 +48,10 @@ const stage = () => {
       await setUserStage(username, stageVal + 1);
       // Insert Text
       let newStageName = await getStageName(stageVal + 1);
-      if (!["rules"].includes(stageName) || !["break", "end"].includes(newStageName)) {
+      if (
+        !["rules"].includes(stageName) ||
+        !["break", "end"].includes(newStageName)
+      ) {
         await sendMessage(ctx, stages["default"]["next"]);
       }
       const newStageData = stages[
@@ -59,9 +62,12 @@ const stage = () => {
           if (newStageData["extra"]) {
             await sendMessage(ctx, text, {
               extra: newStageData["extra"],
+              delay: 500,
             });
           } else {
-            await sendMessage(ctx, text);
+            await sendMessage(ctx, text, {
+              delay: 500,
+            });
           }
         }
       }
