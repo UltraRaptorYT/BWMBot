@@ -56,7 +56,7 @@ const stage = () => {
       let newStageName = await getStageName(stageVal + 1);
       if (
         !["rules"].includes(stageName) ||
-        !["break", "end"].includes(newStageName)
+        !["s1", "break", "end"].includes(newStageName)
       ) {
         await sendMessage(ctx, stages["default"]["next"]);
       }

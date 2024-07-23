@@ -1,9 +1,9 @@
 {
   "default": {
     "correct": "Well Done! 恭喜您答对了！",
-    "wrong": "Try Again!",
-    "next": "The next stage will be arriving shortly...\n\n下一道题即将到来...",
-    "hint": "Sorry, there is no hint for this stage!\n\n对不起，这道题没有暗示！",
+    "wrong": "Wrong Answer, Please Try Again! 对不起答案不正确，请再试一次！",
+    "next": "The next stage will be arriving shortly...\n下一道题即将到来...",
+    "hint": "Sorry, there is no hint for this stage!\n对不起，这道题没有暗示！",
     "skip": "Skip stage",
     "hintNotUsed": "NOTE, using the HINT will add <b>5 MINUTES</b> to your total time.\n\n注意使用暗示将会增加您的总时间<b>五分钟</b>。",
     "hintUsed": "Resending HINT, <b>5 MINUTES</b> will not be added to your total time.\n\n重新发送暗示，您的总时间不会增加<b>五分钟</b>。"
@@ -32,32 +32,38 @@
     "info": [
       "Stone Lions are symbols of protection (yin metal).the male lion represents power (yang metal) over the world in imperial china, while the female lion represents care (yang metal) for the souls in the building. "
     ],
-    "key": ["left"],
-    "hint": ["Look at the feet of the stone lions"]
+    "key": ["left", "左"],
+    "hint": [
+      "Look carefully under the feet of the stone lions\n\n仔细观察石狮的脚底下"
+    ]
   },
   "s2": {
     "text": [
-      "Stage 2:\nYou head towards <b>LEFT</b> side of the Monastery and find a Buddha Statue with a BELL 🔔. Look carefully, how many yellow chinese knots are there? [Spell out the number eg. 1 - one 2 - two]"
+      "Stage 2:\nYou head towards <b>LEFT</b> side of the Monastery and find a Buddha Statue with a BELL 🔔. Look carefully, and observe how many yellow Chinese knots are there?\n\n<b>Spell out the number in words (e.g., 1 - one, 2 - two)</b>\n\n您朝寺院的左侧方向走，找到一尊带有铃铛的佛像🔔。仔细观察，观察一共有多少个黄色中国结？\n\n用单词拼写出数字（例如 1 - one、2 - two）"
     ],
     "info": [
       "Did you know Ksitigarhba made a vow to take the responsibility to guide all living beings in the six realms and only achieve Buddhahood and get out of the cycle of birth and rebirth until all hell beings are out of hell (yin earth)"
     ],
     "key": ["seven"],
-    "hint": ["Circumambulate around Kshitigarbha and you will find your answer"]
+    "hint": [
+      "Circumambulate around Kshitigarbha and you will find your answer\n\n绕一圈地藏菩萨，您就会找到答案"
+    ]
   },
   "s3": {
     "text": [
-      "Stage 3:\nMaking your way towards the side gate, something sparkles at the corner of your eyes✨, lots of GEMS 💎💎💎 and GOLD 💰💵. There is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n"
+      "Stage 3:\nMaking your way towards the side gate, something sparkles at the corner of your eyes✨, lots of GEMS 💎💎💎 and GOLD 💰💵. There is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n\n走向侧门，眼角有东西在闪闪发光✨，有很多宝石💎💎💎和黄金💰💵。有一个隐藏的小吉祥物正在喷吐金子💰💰💰，那是什么吉祥物？ [请用英文来回答]"
     ],
     "info": [
       "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
     ],
     "key": ["mongoose"],
-    "hint": ["Look for the label inside of the Yellow Dzambhala Statue"]
+    "hint": [
+      "Look for the creature and its label inside of the Yellow Dzambhala Statue\n\n请在在黄财神雕像内寻找吉祥物及其它的标签"
+    ]
   },
   "s4": {
     "text": [
-      "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?",
+      "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?\n\n让我们加大难度，寻找时间胶囊。从头到尾穿过下面的迷宫。在迷宫中，你只能通过时间胶囊中找到的东西。告诉我你出去时会组成什么词？",
       "image:https://bwm-bot.vercel.app/Clue4.png"
     ],
     "info": ["Time capsule was done in 2022"],
