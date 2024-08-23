@@ -1,6 +1,11 @@
 import { Context } from "telegraf";
 import createDebug from "debug";
-import { checkUserExist, addUser, setUserStage } from "../utils/utils";
+import {
+  checkUserExist,
+  addUser,
+  setUserStage,
+  sendMessage,
+} from "../utils/utils";
 import stages from "../stages.json";
 
 const debug = createDebug("bot:start_command");
@@ -11,6 +16,9 @@ const start = () => async (ctx: Context) => {
   debug(`Triggered "start" command with message \n${message}`);
   if (!username) {
     debug('Error with "start" text command');
+    for await (let text of stages["default"]["usernameInstructions"]) {
+      await sendMessage(ctx, text, { delay: 100 });
+    }
     return;
   }
   const userExist = await checkUserExist(username);
@@ -27,8 +35,12 @@ const start = () => async (ctx: Context) => {
         inline_keyboard: [
           [
             {
-              text: "Begin 开始",
-              callback_data: "start_puzzle_hunt",
+              text: "English",
+              callback_data: "start_puzzle_hunt_en",
+            },
+            {
+              text: "中文 （Chinese）",
+              callback_data: "start_puzzle_hunt_ch",
             },
           ],
         ],

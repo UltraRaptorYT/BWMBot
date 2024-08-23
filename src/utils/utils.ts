@@ -4,6 +4,33 @@ import createDebug from "debug";
 
 const debug = createDebug("bot:utils");
 
+export async function setUserLanguage(username: string, language: "EN" | "CH") {
+  const { error } = await supabase
+    .from("bwm_user")
+    .update({ language })
+    .eq("username", username);
+  if (error) {
+    debug("setUserLanguage - failed to run");
+  }
+  return;
+}
+
+export async function getUserLanguage(username: string) {
+  const { data, error } = await supabase
+    .from("bwm_user")
+    .select()
+    .eq("username", username);
+  if (error) {
+    debug("getUserLanguage - failed to run");
+    return "EN";
+  }
+  if (data.length == 0) {
+    debug(`getUserLanguage - user ${username} not found`);
+    return "EN";
+  }
+  return data[0].language;
+}
+
 export async function checkUserExist(username: string) {
   const { data, error } = await supabase
     .from("bwm_user")
@@ -185,6 +212,7 @@ export type StageType = {
   skip?: string;
   hintNotUsed?: string;
   hintUsed?: string;
+  usernameInstructions?: string[];
 };
 
 export type ProgressType = {

@@ -1,15 +1,32 @@
 {
   "default": {
-    "correct": "Well Done! 恭喜您答对了！",
-    "wrong": "Wrong Answer, Please Try Again! 对不起答案不正确，请再试一次！",
-    "next": "The next stage will be arriving shortly...\n下一道题即将到来...",
-    "hint": "Sorry, there is no hint for this stage!\n对不起，这道题没有暗示！",
-    "skip": "Skip stage",
+    "correct-en": "Well Done!",
+    "correct-ch": "恭喜您答对了！",
+    "wrong-en": "Wrong Answer, Please Try Again!",
+    "wrong-ch": "对不起答案不正确，请再试一次！",
+    "next-en": "The next stage will be arriving shortly...",
+    "next-ch": "下一道题即将到来...",
+    "hint-en": "Sorry, there is no hint for this stage!",
+    "hint-ch": "对不起，这道题没有暗示！",
+    "skip-en": "Skip stage",
+    "skip-ch": "跳过阶段",
     "hintNotUsed": "NOTE, using the HINT will add <b>5 MINUTES</b> to your total time.\n\n注意使用暗示将会增加您的总时间<b>五分钟</b>。",
-    "hintUsed": "Resending HINT, <b>5 MINUTES</b> will not be added to your total time.\n\n重新发送暗示，您的总时间不会增加<b>五分钟</b>。"
+    "hintUsed": "Resending HINT, <b>5 MINUTES</b> will not be added to your total time.\n\n重新发送暗示，您的总时间不会增加<b>五分钟</b>。",
+    "usernameInstructions": [
+      "Please set your Telegram username by following these steps:\n\n请按照以下步骤设置您的 Telegram 用户名：",
+      "Click on the icon 单击以下图标",
+      "image:https://bwm-bot.vercel.app/Username1.png",
+      "Enter the settings tab 进入设置选项卡",
+      "image:https://bwm-bot.vercel.app/Username2.png",
+      "Click on the empty username 单击空用户名",
+      "image:https://bwm-bot.vercel.app/Username3.png",
+      "创建用户名",
+      "image:https://bwm-bot.vercel.app/Username4.png",
+      "Type /start to start again 输入 /start 重新开始"
+    ]
   },
   "start": {
-    "intro": "Hello {username}!\nWelcome to BW Monastery.\n\nI am \\_\\_\\_, your guide to puzzle hunt.\n\n\n欢迎来到吉祥宝聚寺",
+    "intro": "<b>Hello {username}! 👋🏻</b>\n\n<b>Welcome to BW Monastery 🎉🎉</b>\n\nLet’s embark on an exciting journey with our puzzle hunt, <i><b>\"The Lost Mooncake Recipe.\"</b></i>\n\n\n<b>您好 {username}！ 👋🏻</b>\n\n<b>欢迎您到吉祥宝聚寺 🎉🎉</b>\n\n让我们踏上一段激动人心的旅程，开始我们的寻宝游戏<i><b>【失落的月饼食谱】</b></i>\n\nBefore we begin, please choose your preferred language:\n在开始之前，请选择您的首选语言：",
     "error": "Start bot by /start"
   },
   "rules": {
@@ -44,7 +61,7 @@
     "info": [
       "Did you know Ksitigarhba made a vow to take the responsibility to guide all living beings in the six realms and only achieve Buddhahood and get out of the cycle of birth and rebirth until all hell beings are out of hell (yin earth)"
     ],
-    "key": ["seven"],
+    "key": ["seven", "7"],
     "hint": [
       "Circumambulate around Kshitigarbha and you will find your answer\n\n绕一圈地藏菩萨，您就会找到答案"
     ]
@@ -56,7 +73,7 @@
     "info": [
       "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
     ],
-    "key": ["mongoose"],
+    "key": ["mongoose", "吐宝鼠"],
     "hint": [
       "Look for the creature and its label inside of the Yellow Dzambhala Statue\n\n请在在黄财神雕像内寻找吉祥物及其它的标签"
     ]
