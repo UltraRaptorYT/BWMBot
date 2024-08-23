@@ -202,14 +202,21 @@ export type StageType = {
   error?: string;
   rules?: string[];
   key?: string[];
-  correct?: string;
-  wrong?: string;
-  next?: string;
+  "correct-en"?: string;
+  "correct-ch"?: string;
+  "wrong-en"?: string;
+  "wrong-ch"?: string;
+  "next-en"?: string;
+  "next-ch"?: string;
+  "text-en"?: string[];
   text?: string[];
   info?: string[];
-  hint?: string;
+  "hint-en"?: string;
+  "hint-ch"?: string;
+  hint?: string; // REMOVE
   extra?: Types.ExtraReplyMessage;
-  skip?: string;
+  "skip-en"?: string;
+  "skip-ch"?: string;
   hintNotUsed?: string;
   hintUsed?: string;
   usernameInstructions?: string[];
