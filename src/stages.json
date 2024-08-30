@@ -10,13 +10,13 @@
     "usernameInstructions": [
       "Please set your Telegram username by following these steps:\n\n请按照以下步骤设置您的 Telegram 用户名：",
       "Click on the icon 单击以下图标",
-      "image:https://bwm-bot.vercel.app/Username1.png",
+      "image:https://bwm-bot.vercel.app/Username1.jpeg",
       "Enter the settings tab 进入设置选项卡",
-      "image:https://bwm-bot.vercel.app/Username2.png",
+      "image:https://bwm-bot.vercel.app/Username2.jpeg",
       "Click on the empty username 单击空用户名",
-      "image:https://bwm-bot.vercel.app/Username3.png",
+      "image:https://bwm-bot.vercel.app/Username3.jpeg",
       "创建用户名",
-      "image:https://bwm-bot.vercel.app/Username4.png",
+      "image:https://bwm-bot.vercel.app/Username4.jpeg",
       "Type /start to start again 输入 /start 重新开始"
     ]
   },
