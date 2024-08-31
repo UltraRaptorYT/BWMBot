@@ -29,17 +29,18 @@ const start = () => async (ctx: Context) => {
   const startTime = Date.now();
 
   try {
-    await ctx.replyWithMarkdownV2(message, {
-      parse_mode: "Markdown",
-      reply_markup: {
-        inline_keyboard: [
-          [
-            {
-              text: "Begin 开始",
-              callback_data: "start_puzzle_hunt",
-            },
+    await sendMessage(ctx, message, {
+      extra: {
+        reply_markup: {
+          inline_keyboard: [
+            [
+              {
+                text: "Begin 开始",
+                callback_data: "start_puzzle_hunt",
+              },
+            ],
           ],
-        ],
+        },
       },
     });
     const endTime = Date.now();
