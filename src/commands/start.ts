@@ -35,12 +35,8 @@ const start = () => async (ctx: Context) => {
         inline_keyboard: [
           [
             {
-              text: "English",
-              callback_data: "start_puzzle_hunt_en",
-            },
-            {
-              text: "中文 （Chinese）",
-              callback_data: "start_puzzle_hunt_ch",
+              text: "Begin 开始",
+              callback_data: "start_puzzle_hunt",
             },
           ],
         ],
