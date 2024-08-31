@@ -11,7 +11,6 @@ import {
   sendMessage,
   getStageName,
   StageType,
-  setUserLanguage,
 } from "./utils/utils";
 
 const BOT_TOKEN = process.env.BOT_TOKEN || "";
@@ -26,13 +25,12 @@ bot.command("resend", resend());
 bot.command("test", test());
 bot.on("message", stage());
 
-bot.action("start_puzzle_hunt_en", async (ctx: Context) => {
+bot.action("start_puzzle_hunt", async (ctx: Context) => {
   try {
     const username = ctx.from?.username || "";
-    await setUserLanguage(username, "EN");
     let stage = Object.keys(stages).indexOf("start");
     if (stage == -1) {
-      console.log("Error");
+      return console.log("Error");
     }
     stage += 1;
     await setUserStage(username, stage);
@@ -44,29 +42,7 @@ bot.action("start_puzzle_hunt_en", async (ctx: Context) => {
       }
     }
   } catch (error) {
-    console.error("Error handling 'start_puzzle_hunt_en' action:", error);
-  }
-});
-
-bot.action("start_puzzle_hunt_ch", async (ctx: Context) => {
-  try {
-    const username = ctx.from?.username || "";
-    await setUserLanguage(username, "CH");
-    let stage = Object.keys(stages).indexOf("start");
-    if (stage == -1) {
-      console.log("Error");
-    }
-    stage += 1;
-    await setUserStage(username, stage);
-    let stageName = await getStageName(stage);
-    const stageData = stages[stageName as keyof typeof stages] as StageType;
-    if (stageData["rules"]) {
-      for (let rule of stageData["rules"]) {
-        await sendMessage(ctx, rule, { delay: 100 });
-      }
-    }
-  } catch (error) {
-    console.error("Error handling 'start_puzzle_hunt_ch' action:", error);
+    console.error("Error handling 'start_puzzle_hunt' action:", error);
   }
 });
 
