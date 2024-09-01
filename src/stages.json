@@ -21,20 +21,20 @@
     ]
   },
   "start": {
-    "intro": "<b>Hello {username}! 👋🏻</b>\n\n<b>Welcome to BW Monastery 🎉🎉</b>\n\nLet’s embark on an exciting journey with our puzzle hunt, <i><b>\"The Lost Mooncake Recipe.\"</b></i>\n\n\n<b>您好 {username}！ 👋🏻</b>\n\n<b>欢迎您到吉祥宝聚寺 🎉🎉</b>\n\n让我们踏上一段激动人心的旅程，开始我们的寻宝游戏<i><b>【失落的月饼食谱】</b></i>",
-    "error": "Start bot by /start"
+    "intro": "<b>Hello {username}! 👋🏻</b>\n\n<b>Welcome to BW Monastery 🎉🎉</b>\n\nLet’s embark on an exciting journey with our puzzle hunt, <i><b>\"The Lost Mooncake Recipe.\"</b></i>\n\n\n<b>您好 {username}！ 👋🏻</b>\n\n<b>欢迎您到吉祥宝聚寺 🎉🎉</b>\n\n让我们踏上一段激动人心的旅程，开始我们的寻宝游戏<i><b>《失落的月饼食谱》。</b></i>",
+    "error": "Start bot by /start 使用 /start来启游戏"
   },
   "rules": {
     "rules": [
-      "Prepare yourself for a thrilling adventure filled with challenges and mysteries as you search for the secrets of this ancient and coveted recipe.\n\nReady to begin? Type <i><b>'READY'</b></i> and the first stage will be sent. Good luck."
+      "Prepare yourself for a thrilling adventure filled with challenges and mysteries as you search for the secrets of this ancient and coveted recipe.\n\nReady to begin? Type <i><b>'READY'</b></i> and your first puzzle will be sent. Good luck.\n\n在您寻找这个古老而令人垂涎的食谱的秘密时，准备好迎接充满挑战和谜团的惊险冒险吧。\n\n准备好了吗？输入<i><b>\“准备好了\”</b></i>，之后您的第一个谜题就会被发送。"
     ],
-    "key": ["ready"],
+    "key": ["ready", "准备好了"],
     "correct": "Let's Start!",
-    "wrong": "Please enter 'READY'"
+    "wrong": "Please enter 'READY' 请输入\“准备好了\”"
   },
   "s1": {
     "text": [
-      "Let the hunt commence!",
+      "Let the hunt commence! 开始寻宝吧！",
       "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <b>stones</b>, where virtues align,\nChildren’s play turns to <b>deeds</b> divine.\nA <b>blossom</b> of purity, though not of the <b>earth</b>,\nIn this <b>sacred</b> act, you'll find its <b>worth</b>.\nWhat am I?\"\n\nCount the number of bolded words in the riddle. Skip that many words on the English Information Panel to find the answer.\n\n\n以下谜语将引导您找到您要寻找的地方。\n\n\"<b>石</b>头园中美德成行，\n<b>孩</b>童玩耍转为<b>善</b>行。\n非土之<b>花</b>却至纯净，\n在此神圣之举中，找寻其价值。\n我是什么？\"\n\n数一数谜语中加粗的字数，然后在英文的信息板中跳过相应数量的词语，找到您要寻找的答案。"
     ],
     "info": ["IDK"],
