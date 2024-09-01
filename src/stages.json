@@ -26,11 +26,11 @@
   },
   "rules": {
     "rules": [
-      "Prepare yourself for a thrilling adventure filled with challenges and mysteries as you search for the secrets of this ancient and coveted recipe.\n\nReady to begin? Type <i><b>'READY'</b></i> and your first puzzle will be sent. Good luck.\n\n在您寻找这个古老而令人垂涎的食谱的秘密时，准备好迎接充满挑战和谜团的惊险冒险吧。\n\n准备好了吗？输入<i><b>\“准备好了\”</b></i>，之后您的第一个谜题就会被发送。"
+      "Prepare yourself for a thrilling adventure filled with challenges and mysteries as you search for the secrets of this ancient and coveted recipe.\n\nReady to begin? Type <i><b>'READY'</b></i> and your first puzzle will be sent. Good luck.\n\n在您寻找这个古老而令人垂涎的食谱的秘密时，准备好迎接充满挑战和谜团的惊险冒险吧。\n\n准备好了吗？输入<i><b>“准备好了”</b></i>，之后您的第一个谜题就会被发送。"
     ],
     "key": ["ready", "准备好了"],
     "correct": "Let's Start!",
-    "wrong": "Please enter 'READY' 请输入\“准备好了\”"
+    "wrong": "Please enter 'READY' 请输入“准备好了”"
   },
   "s1": {
     "text": [
