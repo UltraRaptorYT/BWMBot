@@ -34,7 +34,7 @@
   },
   "s1": {
     "text": [
-      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <b>stones</b>, where virtues align,\nChildren’s play turns to <b>deeds</b> divine.\nA <b>blossom</b> of purity, though not of the <b>earth</b>,\nIn this <b>sacred</b> act, you'll find its <b>worth</b>.\nWhat am I?\"\n\nCount the number of bolded words in the riddle. Skip that many words on the English Information Panel to find the answer.\n\n\n以下谜语将引导您找到您要寻找的地方。\n\n\"<b>石</b>头园中美德成行，\n<b>孩</b>童玩耍转为<b>善</b>行。\n非土之<b>花</b>却至纯净，\n在此神圣之举中，找寻其价值。\n我是什么？\"\n\n数一数谜语中加粗的字数，然后在英文的信息板中跳过相应数量的词语，找到您要寻找的答案。"
+      "Stage 1 谜题 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <i><b>stones</b></i>, where <i><b>virtues</b></i> align,\nChildren’s play turns to <i><b>deeds</b></i> divine.\nA <i><b>blossom</b></i> of <i><b>purity</b></i>, though not of the <i><b>earth</b></i>,\nIn this <i><b>sacred</b></i> act, you'll find its <i><b>worth</b></i>.\nWhat am I?\"\n\nCount the number of BOLDED & ITALICISED words in the riddle. Skip that many words on the English Information Panel to find the answer.\n\n\n以下谜语将引导您找到您要寻找的地方。\n\n\"<i><b>石</b></i>头园中美<i><b>德</b></i>成行，\n<i><b>孩</b></i>童玩耍转为<i><b>善</b></i>行。\n非土之<i><b>花</b></i>却至纯<i><b>净</b></i>，\n在此神<i><b>圣</b></i>之举中，找寻其<i><b>价</b></i>值。\n我是什么？\"\n\n数一数谜语中加粗体和斜体的字数，然后在英文的信息板中跳过相应数量的词语，找到您要寻找的答案。"
     ],
     "info": ["IDK"],
     "key": ["lotus", "莲花"],
