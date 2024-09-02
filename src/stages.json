@@ -28,7 +28,10 @@
     "rules": [
       "Prepare yourself for a thrilling adventure filled with challenges and mysteries as you search for the secrets of this ancient and coveted recipe.\n\nReady to begin? Type <i><b>'READY'</b></i> and your first puzzle will be sent. Good luck.\n\n在您寻找这个古老而令人垂涎的食谱的秘密时，准备好迎接充满挑战和谜团的惊险冒险吧。\n\n准备好了吗？输入<i><b>“准备好了”</b></i>，之后您的第一个谜题就会被发送。"
     ],
-    "key": ["ready", "准备好了"],
+    "key": [
+      "ready",
+      "准备好了"
+    ],
     "correct": "Let the hunt commence! 开始寻宝吧！",
     "wrong": "Please enter 'READY' 请输入“准备好了”"
   },
@@ -36,8 +39,13 @@
     "text": [
       "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren’s play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<u>石</u>头园中美<u>德</u>成行，\n<u>孩</u>童玩耍转为<u>善</u>行。\n非土之<u>花</u>却至纯<u>净</u>，\n在此神<u>圣</u>之举中，找寻其<u>价</u>值。\n我是什么？\"\n\n数一数谜语中有下划线的字，然后在英文的信息板中跳过刚刚数的词语，找到您要寻找的食材。"
     ],
-    "info": ["Stone Stupas"],
-    "key": ["lotus", "莲花"],
+    "info": [
+      "Stone Stupas"
+    ],
+    "key": [
+      "lotus",
+      "莲花"
+    ],
     "hint": [
       "Hint 1: ||Stone Towers are a common sight||\n提示 1：||石塔随处可见||",
       "Hint 2: ||Located near Avalokitesvara Statue||\n提示 2：||您寻找的地位于观世音菩萨像附近||"
@@ -45,12 +53,16 @@
   },
   "s2": {
     "text": [
-      "Stage 2:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n\n\n谜题 2：\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",      "image:https://bwm-bot.vercel.app/Clue%201.png",
+      "Stage 2:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n\n\n谜题 2：\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",
+      "image:https://bwm-bot.vercel.app/Clue%201.png"
     ],
     "info": [
       "Stone Lions are symbols of protection (yin metal).the male lion represents power (yang metal) over the world in imperial china, while the female lion represents care (yang metal) for the souls in the building. "
     ],
-    "key": ["yolk", "蛋黄"],
+    "key": [
+      "yolk",
+      "蛋黄"
+    ],
     "hint": [
       "Look carefully under the feet of the stone lions\n\n仔细观察石狮的脚底下"
     ]
@@ -62,17 +74,27 @@
     "info": [
       "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
     ],
-    "key": ["mongoose"],
-    "hint": ["Look for the label inside of the Yellow Dzambhala Statue"]
+    "key": [
+      "mongoose"
+    ],
+    "hint": [
+      "Look for the label inside of the Yellow Dzambhala Statue"
+    ]
   },
   "s4": {
     "text": [
       "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?",
       "image:https://bwm-bot.vercel.app/Clue4.png"
     ],
-    "info": ["Time capsule was done in 2022"],
-    "key": ["preservation"],
-    "hint": ["count"]
+    "info": [
+      "Time capsule was done in 2022"
+    ],
+    "key": [
+      "preservation"
+    ],
+    "hint": [
+      "count"
+    ]
   },
   "break": {
     "text": [
@@ -81,7 +103,12 @@
     "extra": {
       "reply_markup": {
         "inline_keyboard": [
-          [{ "text": "End Break 结束休息", "callback_data": "end_break" }]
+          [
+            {
+              "text": "End Break 结束休息",
+              "callback_data": "end_break"
+            }
+          ]
         ]
       }
     }
@@ -91,32 +118,62 @@
       "Stage 5:\nYou exit the kitchen and walk towards a Buddha Statue at the end of the corridor. It is Thousand-armed and Thousand-eyed Avalokiteshvara. The multitude of hands and eyes is mesmerizing. \nEh, something is missing from my photo. Can you tell me what is it?",
       "image:https://bwm-bot.vercel.app/Clue5.jpeg"
     ],
-    "info": ["12"],
-    "key": ["beads"],
+    "info": [
+      "12"
+    ],
+    "key": [
+      "beads"
+    ],
     "hint": [
       "Look closer it is something GREEN",
       "image:https://bwm-bot.vercel.app/Hint%205.jpeg"
     ]
   },
   "s6": {
-    "text": ["Stage 6:\n"],
-    "info": ["12"],
-    "key": ["5"],
-    "hint": ["count"]
+    "text": [
+      "Stage 6:\n"
+    ],
+    "info": [
+      "12"
+    ],
+    "key": [
+      "5"
+    ],
+    "hint": [
+      "count"
+    ]
   },
   "s7": {
-    "text": ["Stage 7:\n"],
-    "info": ["12"],
-    "key": ["i"],
-    "hint": ["count"]
+    "text": [
+      "Stage 7:\n"
+    ],
+    "info": [
+      "12"
+    ],
+    "key": [
+      "i"
+    ],
+    "hint": [
+      "count"
+    ]
   },
   "s8": {
-    "text": ["Stage 8:\n"],
-    "info": ["12"],
-    "key": ["lineage"],
-    "hint": ["count"]
+    "text": [
+      "Stage 8:\n"
+    ],
+    "info": [
+      "12"
+    ],
+    "key": [
+      "lineage"
+    ],
+    "hint": [
+      "count"
+    ]
   },
   "end": {
-    "text": ["The End"]
+    "text": [
+      "The End"
+    ]
   }
 }
