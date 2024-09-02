@@ -9,15 +9,15 @@
     "hintUsed": "Resending HINT, <b>5 MINUTES</b> will not be added to your total time.\n\n重新发送暗示，您的总时间不会增加<b>五分钟</b>。",
     "usernameInstructions": [
       "Please set your Telegram username by following these steps:\n\n请按照以下步骤设置您的 Telegram 用户名：",
-      "1. Click on the icon\n1. 单击以下图标",
+      "1. Click on the icon\n   单击以下图标",
       "image:https://bwm-bot.vercel.app/Username1.jpeg",
-      "2. Enter the settings tab\n2. 进入设置选项卡",
+      "2. Enter the settings tab\n   进入设置选项卡",
       "image:https://bwm-bot.vercel.app/Username2.jpeg",
-      "3. Click on the empty username\n3. 单击空用户名",
+      "3. Click on the empty username\n    单击空用户名",
       "image:https://bwm-bot.vercel.app/Username3.jpeg",
-      "4. Create a username\n4. 创建用户名",
+      "4. Create a username\n    创建用户名",
       "image:https://bwm-bot.vercel.app/Username4.jpeg",
-      "5. Type /start to start again\n5. 输入 /start 重新开始"
+      "5. Type /start to start again\n    输入 /start 重新开始"
     ]
   },
   "start": {
