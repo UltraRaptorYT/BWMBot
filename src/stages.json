@@ -34,25 +34,23 @@
   },
   "s1": {
     "text": [
-      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <i><b>stones</b></i>, where <i><b>virtues</b></i> align,\nChildren’s play turns to <i><b>deeds</b></i> divine.\nA <i><b>blossom</b></i> of <i><b>purity</b></i>, though not of the <i><b>earth</b></i>,\nIn this <i><b>sacred</b></i> act, you'll find its <i><b>worth</b></i>.\nWhat am I?\"\n\nCount the number of BOLDED & ITALICISED words in the riddle. Skip that many words on the English Information Panel to find the answer.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<i><b>石</b></i>头园中美<i><b>德</b></i>成行，\n<i><b>孩</b></i>童玩耍转为<i><b>善</b></i>行。\n非土之<i><b>花</b></i>却至纯<i><b>净</b></i>，\n在此神<i><b>圣</b></i>之举中，找寻其<i><b>价</b></i>值。\n我是什么？\"\n\n数一数谜语中加粗体和斜体的字数，然后在英文的信息板中跳过相应数量的词语，找到您要寻找的答案。"
+      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren’s play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<u>石</u>头园中美<u>德</u>成行，\n<u>孩</u>童玩耍转为<u>善</u>行。\n非土之<u>花</u>却至纯<u>净</u>，\n在此神<u>圣</u>之举中，找寻其<u>价</u>值。\n我是什么？\"\n\n数一数谜语中有下划线的字，然后在英文的信息板中跳过刚刚数的词语，找到您要寻找的食材。"
     ],
-    "info": ["IDK"],
+    "info": ["Stone Stupas"],
     "key": ["lotus", "莲花"],
     "hint": [
-      "Look carefully under the feet of the stone lions\n\n仔细观察石狮的脚底下"
+      "Hint 1: ||Stone Towers are a common sight||\n提示 1：||石塔随处可见||",
+      "Hint 2: ||Located near Avalokitesvara Statue||\n提示 2：||您寻找的地位于观世音菩萨像附近||"
     ]
   },
   "s2": {
     "text": [
-      "Stage 1:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",
-      "image:https://bwm-bot.vercel.app/Clue%201.png",
-      "image:https://bwm-bot.vercel.app/Clue%201.png",
-      "Stage 2:\nYou head towards <b>LEFT</b> side of the Monastery and find a Buddha Statue with a BELL 🔔. Look carefully, how many yellow chinese knots are there? [Spell out the number eg. 1 - one 2 - two]"
+      "Stage 2:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n\n\n谜题 2：\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",      "image:https://bwm-bot.vercel.app/Clue%201.png",
     ],
     "info": [
       "Stone Lions are symbols of protection (yin metal).the male lion represents power (yang metal) over the world in imperial china, while the female lion represents care (yang metal) for the souls in the building. "
     ],
-    "key": ["seven"],
+    "key": ["yolk", "蛋黄"],
     "hint": [
       "Look carefully under the feet of the stone lions\n\n仔细观察石狮的脚底下"
     ]
