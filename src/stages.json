@@ -37,8 +37,7 @@
   },
   "s1": {
     "text": [
-      "test",
-      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren’s play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<i><u>石</i></u>头园中美<i><u>德</u></i>成行，\n<i><u>孩</u></i>童玩耍转为<i><u>善</u></i>行。\n非土之<i><u>花</u></i>却至纯<i><u>净</u></i>，\n在此神<i><u>圣</u></i>之举中，找寻其<i><u>价</u></i>值。\n我是什么？\"\n\n数一数谜语中有<u>下划线</u>和<i>斜体</i>的字，然后在英文的信息板中跳过刚刚数的词语，找到您要寻找的食材。"
+      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren’s play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<i><u>石</u></i>头园中美<i><u>德</u></i>成行，\n<i><u>孩</u></i>童玩耍转为<i><u>善</u></i>行。\n非土之<i><u>花</u></i>却至纯<i><u>净</u></i>，\n在此神<i><u>圣</u></i>之举中，找寻其<i><u>价</u></i>值。\n我是什么？\"\n\n数一数谜语中有<u>下划线</u>和<i>斜体</i>的字，然后在英文的信息板中跳过刚刚数的词语，找到您要寻找的食材。"
     ],
     "info": [
       "Stone Stupas"
