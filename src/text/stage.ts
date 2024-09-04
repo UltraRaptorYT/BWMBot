@@ -35,19 +35,13 @@ const stage = () => {
     if (stageName == "start") {
       return await sendMessage(ctx, stages["start"]["error"]);
     }
-    // console.log(ctx);
-    console.log(ctx.message);
+    console.log(ctx);
 
     if (ctx.message) {
       let uploadSuccess = false;
       if ("photo" in ctx.message) {
         let file_id = ctx.message.photo.pop()?.file_id || "";
-        let uploadSuccess = await uploadFile(
-          ctx,
-          username,
-          file_id,
-          "image/jpeg"
-        );
+        uploadSuccess = await uploadFile(ctx, username, file_id, "image/jpeg");
       } else if ("document" in ctx.message) {
         let file_id = ctx.message.document.file_id;
         uploadSuccess = await uploadFile(
