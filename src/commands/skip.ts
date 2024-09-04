@@ -15,10 +15,6 @@ import stages from "../stages.json";
 const debug = createDebug("bot:skip_command");
 
 const skip = () => async (ctx: Context) => {
-  //! Logic to be implemented
-  /*
-  Check if hint is used []
-  */
   const username = ctx.message?.from.username || "";
   debug(`Triggered "skip" command`);
   let progress = await getCurrentProgress(username);
