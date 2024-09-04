@@ -11,6 +11,7 @@ import {
   sendMessage,
   getStageName,
   StageType,
+  getCurrentProgress,
   updateCompletedTime,
 } from "./utils/utils";
 
@@ -37,7 +38,8 @@ bot.action("start_puzzle_hunt", async (ctx: Context) => {
     await setUserStage(username, stage);
     let stageName = await getStageName(stage);
     const stageData = stages[stageName as keyof typeof stages] as StageType;
-    await updateCompletedTime(stage);
+    let progress = await getCurrentProgress(username);
+    await updateCompletedTime(progress.id);
     if (stageData["rules"]) {
       for (let rule of stageData["rules"]) {
         await sendMessage(ctx, rule, { delay: 100 });
