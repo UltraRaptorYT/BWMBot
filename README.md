@@ -21,7 +21,7 @@ npm i
 2. Start Node Packages
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## Production

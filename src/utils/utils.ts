@@ -1,6 +1,7 @@
 import supabase from "../supabase";
 import { Context, Types } from "telegraf";
 import createDebug from "debug";
+import axios from "axios";
 
 const debug = createDebug("bot:utils");
 
@@ -169,6 +170,37 @@ export async function logAnswer(
   }
 }
 
+export async function uploadFile(
+  ctx: Context,
+  username: string,
+  file_id: string,
+  type: string
+): Promise<boolean> {
+  try {
+    const fileLink = await ctx.telegram.getFileLink(file_id);
+    console.log(fileLink);
+    const response = await axios.get(fileLink.href, {
+      responseType: "arraybuffer",
+    });
+    const buffer = Buffer.from(response.data, "binary");
+    let file_extension = fileLink.href.split(".").slice(-1);
+    const fileName = `${username}-${String(new Date().getTime())}.${file_extension}`;
+    const { error } = await supabase.storage
+      .from("bwm_puzzle")
+      .upload(fileName, buffer, {
+        contentType: type,
+      });
+    if (error) {
+      console.log(error);
+      return false;
+    }
+    return true;
+  } catch (error) {
+    console.log(error);
+    return false;
+  }
+}
+
 interface SendMessageOptions {
   delay?: number;
   reply?: boolean;
@@ -213,6 +245,7 @@ export type StageType = {
   hintNotUsed?: string;
   hintUsed?: string;
   usernameInstructions?: string[];
+  imageUpload?: string;
 };
 
 export type ProgressType = {

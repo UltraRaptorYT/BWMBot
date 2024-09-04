@@ -9,9 +9,9 @@ import {
   StageType,
   sendMessage,
   setUserStage,
-  ProgressType,
   updateCompletedTime,
   logAnswer,
+  uploadFile,
 } from "../utils/utils";
 
 const debug = createDebug("bot:stage_text");
@@ -33,10 +33,43 @@ const stage = () => {
     let stageName = await getStageName(stageVal);
     const stageData = stages[stageName as keyof typeof stages] as StageType;
     if (stageName == "start") {
-      return await ctx.sendMessage(stages["start"]["error"]);
+      return await sendMessage(ctx, stages["start"]["error"]);
     }
-    console.log(ctx);
+    // console.log(ctx);
     console.log(ctx.message);
+
+    if (ctx.message) {
+      let uploadSuccess = false;
+      if ("photo" in ctx.message) {
+        let file_id = ctx.message.photo.pop()?.file_id || "";
+        let uploadSuccess = await uploadFile(
+          ctx,
+          username,
+          file_id,
+          "image/jpeg"
+        );
+      } else if ("document" in ctx.message) {
+        let file_id = ctx.message.document.file_id;
+        uploadSuccess = await uploadFile(
+          ctx,
+          username,
+          file_id,
+          ctx.message.document.mime_type || "image/jpeg"
+        );
+      } else if ("video" in ctx.message) {
+        let file_id = ctx.message.video.file_id;
+        uploadSuccess = await uploadFile(
+          ctx,
+          username,
+          file_id,
+          ctx.message.video.mime_type || "video/mp4"
+        );
+      }
+      if (uploadSuccess) {
+        return await sendMessage(ctx, stages["default"]["imageUpload"]);
+      }
+    }
+
     let answer = ctx.text || "";
     let isCorrect =
       stageData["key"]?.includes(answer.toLowerCase().trim() || "") || false;
@@ -84,7 +117,7 @@ const stage = () => {
       let wrong = stageData["wrong"] || stages["default"]["wrong"];
       return await sendMessage(ctx, wrong);
     }
-    return await ctx.sendMessage(stages["start"]["error"]);
+    return await sendMessage(ctx, stages["start"]["error"]);
   };
 };
 
