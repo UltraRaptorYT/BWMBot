@@ -27,22 +27,23 @@
   },
   "rules": {
     "rules": [
-      "Before we dive into this thrilling puzzle hunt, let's lay down some ground rules. Take your time to read them carefully—your game timer hasn't started yet, so there's no rush. \n\n\n在我们开始这场激动人心的寻宝游戏之前，先了解一下基本规则。请仔细阅读，因为您的游戏计时器还没有启动，所以不必着急。",
-      "🧑‍🏫 [Rules: 1/3]\nRemember, you must send only one message at a time, or you might confuse the bot and face penalties! Patience is key as the bot carefully considers your answers.\n\n\n🧑‍🏫 [游戏规则: 1/3]\n请记住，每次只能发送一条消息，否则可能会让机器人感到困惑并受到惩罚！耐心是关键，因为机器人会仔细思考您的答案。",
-      "🧑‍🏫 [Rules: 2/3]\nYour game will be timed. Each incorrect answer adds a penalty of 5 minutes to your final timing, so answer carefully! Need help solving a Stage? A hint is available, but at a cost. Please refer to the image below for details.\n\nThe timer will be paused during breaks, so you can properly relax 😉\n\n\n🧑‍🏫 [游戏规则: 2/3]\n您的游戏是有计时的。每个错误答案都会为您的最终时间增加5分钟的惩罚，所以请仔细思考再作答！需要帮助破解难题吗？您可以请求暗示，但这会有代价。请参阅下方图片以获取详细信息。\n\n别担心，休息期间计时器会暂停，让您可以好好放松😉",
+      "Before we start this exciting puzzle hunt, let's go over the rules. No rush—your timer hasn't started yet.\n\n\n在开始激动人心的寻宝游戏之前，先了解一下规则。别急，计时器还没启动。",
+      "🧑‍🏫 [Rules: 1/3]\n<b>One message at a time!</b> Sending more may confuse the bot and lead to penalties. Be patient—every answer is carefully considered.\n\n\n🧑‍🏫 [游戏规则: 1/3]\n<b>每次只能发送一条消息</b>  多条消息会让机器人混淆并受到惩罚。耐心点哦！",
+      "🧑‍🏫 [Rules: 2/3]\n<b>Timed Game:</b> Incorrect answers add 5 minutes to your final time. Hints are available but come at a cost. Don't worry, the timer pauses during breaks.\n\n\n🧑‍🏫 [游戏规则: 2/3]\n<b>计时游戏:</b>  错误答案会加时5分钟。可以请求提示，但会有代价。休息时计时器会暂停。",
       "image:https://bwm-bot.vercel.app/RuleEn.png",
       "image:https://bwm-bot.vercel.app/RuleCh.png",
-      "🧑‍🏫 [Rules: 3/3]\nLastly, feel free to share your selfies and photos throughout the game. These won't count as answers to any questions, but we'd love to see your journey!\n\nGet ready for an epic adventure, brimming with challenges and mysteries, as you hunt for the secrets of this ancient and coveted recipe.\n\nReady to begin? Type <i><b>'READY'</b></i> and your first puzzle will be on its way. Good luck.\n\n\n🧑‍🏫 [游戏规则: 3/3]\n最后，请随意在游戏中分享您的自拍和照片。这些不会被算作问题的答案，但我们很期待看到您的冒险之旅！\n\n准备好迎接一场充满挑战和谜团的史诗级冒险了吗？在寻找这个古老而令人垂涎的食谱秘密的过程中，做好准备吧。\n\n准备好了吗？输入<i><b>“准备好了”</b></i>，您的第一个谜题将被发送。祝您好运！"
+      "🧑‍🏫 [Rules: 3/3]\n<b>Share your photos!</b> They're welcome, but won't count as answers.\n\n\n🧑‍🏫 [游戏规则: 3/3]\n<b>分享照片！</b>  虽然不算答案，但我们很期待看到您的旅程。",
+      "Ready for an epic adventure to uncover the lost mooncake recipe? Type <i><b>'READY'</b></i> to start! Good luck!\n\n准备好了吗？输入<i><b>“准备好了”</b></i>开始冒险！祝您好运！"
     ],
     "key": ["ready", "准备好了"],
-    "correct": "Let the hunt commence! 开始寻宝吧！",
-    "wrong": "Please enter 'READY' 请输入“准备好了”"
+    "correct": "Let the hunt commence!  开始寻宝吧！",
+    "wrong": "Please enter <i><b>'READY'</b></i>  请输入<i><b>“准备好了”</b></i>"
   },
   "s1": {
     "text": [
       "image:https://bwm-bot.vercel.app/Intro.png",
-      "Long ago, Master Yuè, the greatest mooncake maker, created a recipe that was said to bring joy and prosperity to all who tasted it. To protect its magic, the recipe was hidden in riddles across the land. Now, only those who solve the puzzles can uncover the lost recipe and restore the magic of the Mid-Autumn Festival. Your journey begins now—find the hidden keywords and help bring back Master Yuè's legendary mooncake!\n\n\n很久以前，最伟大的月饼师傅月大师创造了一份据说能带来快乐和繁荣的秘方。为了保护它的魔力，秘方被隐藏在各地的谜题中。如今，只有解开谜题的人才能找到失落的秘方，恢复中秋节的魔力。你的旅程现在开始了——寻找隐藏的关键词，帮助重现月大师的传奇月饼！",
-      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren’s play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<i><u>石</u></i>头园中美<i><u>德</u></i>成行，\n<i><u>孩</u></i>童玩耍转为<i><u>善</u></i>行。\n非土之<i><u>花</u></i>却至纯<i><u>净</u></i>，\n在此神<i><u>圣</u></i>之举中，找寻其<i><u>价</u></i>值。\n我是什么？\"\n\n数一数谜语中有<u>下划线</u>和<i>斜体</i>的字，然后在英文的信息板中跳过刚刚数的词语，找到您要寻找的食材。"
+      "Master Yuè, the greatest mooncake maker, created a recipe that brought joy and prosperity. To protect its magic, he hid it in riddles across the land. Only those who solve the puzzles can find the lost recipe and restore the Mid-Autumn Festival’s magic. Begin your journey now—find the hidden keywords and uncover Master Yuè's legendary mooncake!\n\n\n月大师创造了一份能带来快乐和繁荣的秘方，为了保护它，他将秘方隐藏在各地的谜题中。解开谜题，找到失落的秘方，恢复中秋节的魔力。您的旅程现在开始了——寻找隐藏的关键词，重现月大师的传奇月饼！",
+      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren’s play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<u>石</u>头园中美<u>德</u>成行，\n<u>孩</u>童玩耍转为<u>善</u>行。\n非土之<u>花</u>却至纯<u>净</u>，\n在此神<u>圣</u>之举中，找寻其<u>价</u>值。\n我是什么？\"\n\n数一数谜语中有<u>下划线</u>的字，然后在英文的信息板中跳过刚刚数的词语，找到您要寻找的食材。"
     ],
     "info": ["Stone Stupas"],
     "key": ["lotus", "莲花"],
@@ -53,7 +54,7 @@
   },
   "s2": {
     "text": [
-      "Stage 2:\nCarefully examine the image provided. It will guide you to the right spot. Find where the hidden detail lies, and you'll uncover the answer.\n\n\n谜题 2：\n仔细观察提供的图片，它会引导您找到正确的位置。找出隐藏的细节，答案就在其中。",
+      "Stage 2:\nCarefully examine the image provided. It will guide you to the right spot. One of them holds a 👶🏻🦁 that you must find. Look closely — you'll uncover the answer.\n\n\n谜题 2：\n仔细观察提供的图片，它会引导您找到正确的位置。它们之中有一个👶🏻🦁，您需要找到它。仔细观察，答案就在其中。",
       "image:https://bwm-bot.vercel.app/Clue%201.png"
     ],
     "info": [
@@ -61,7 +62,7 @@
     ],
     "key": ["yolk", "蛋黄"],
     "hint": [
-      "Hint 1: <span class=\"tg-spoiler\">There are 2 white figures standing at the front</span>\n暗示 1：<span class=\"tg-spoiler\">前面有两尊白色雕像</span>",
+      "Hint 1: <span class=\"tg-spoiler\">There are 2 white statues standing at the front gate</span>\n暗示 1：<span class=\"tg-spoiler\">大门前有两尊白色雕像</span>",
       "Hint 2: <span class=\"tg-spoiler\">Pay close attention to what lies beneath their feet</span>\n暗示 2：<span class=\"tg-spoiler\">仔细观察雕像脚下的东西</span>"
     ]
   },
@@ -72,7 +73,7 @@
     "info": [
       "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
     ],
-    "key": ["mongoose"],
+    "key": ["mongoose", "吐宝鼠"],
     "hint": ["Look for the label inside of the Yellow Dzambhala Statue"]
   },
   "s4": {
