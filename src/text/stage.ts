@@ -36,6 +36,7 @@ const stage = () => {
       return await ctx.sendMessage(stages["start"]["error"]);
     }
     console.log(ctx);
+    console.log(ctx.message);
     let answer = ctx.text || "";
     let isCorrect =
       stageData["key"]?.includes(answer.toLowerCase().trim() || "") || false;
