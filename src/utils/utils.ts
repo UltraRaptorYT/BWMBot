@@ -185,11 +185,18 @@ export async function uploadFile(
     const buffer = Buffer.from(response.data, "binary");
     let file_extension = fileLink.href.split(".").slice(-1);
     const fileName = `${username}-${String(new Date().getTime())}.${file_extension}`;
-    const { error } = await supabase.storage
+    let storageVal = await supabase.storage
       .from("bwm_puzzle")
       .upload(fileName, buffer, {
         contentType: type,
       });
+    if (storageVal.error) {
+      console.log(storageVal.error);
+      return false;
+    }
+    let { error } = await supabase
+      .from("bwm_image")
+      .insert({ username: username, image: storageVal.data.fullPath });
     if (error) {
       console.log(error);
       return false;
