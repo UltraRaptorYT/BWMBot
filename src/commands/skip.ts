@@ -32,12 +32,12 @@ const skip = () => async (ctx: Context) => {
       await sendMessage(ctx, stages["default"]["skipInvalid"], { reply: true });
     } else {
       for (let text of stages["default"]["skip"]) {
-        await sendMessage(ctx, text, { delay: 100 });
+        await sendMessage(ctx, text, { delay: 100, reply: true });
       }
       await addHint(username, stageVal, "skip");
       await updateCompletedTime(progress.id, true);
       for (let text of stageData["skip"]) {
-        await sendMessage(ctx, text, { delay: 100, reply: true });
+        await sendMessage(ctx, text, { delay: 100 });
       }
       if (stageData["info"]) {
         for (let info of stageData["info"]) {
