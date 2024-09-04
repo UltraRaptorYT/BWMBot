@@ -72,7 +72,9 @@ const stage = () => {
       // Update Time
       await updateCompletedTime(progress.id);
       let wellDone = stageData["correct"] || stages["default"]["correct"];
-      await sendMessage(ctx, wellDone);
+      for (let text of wellDone) {
+        await sendMessage(ctx, text);
+      }
       // Insert Info
       if (stageData["info"]) {
         for (let info of stageData["info"]) {

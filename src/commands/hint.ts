@@ -36,8 +36,9 @@ const hint = () => async (ctx: Context) => {
     for (let hint of stageData["hint"]) {
       await sendMessage(ctx, hint);
     }
+    return;
   } else {
-    await sendMessage(ctx, stages["default"]["hint"], { reply: true });
+    return await sendMessage(ctx, stages["default"]["hint"], { reply: true });
   }
 };
 

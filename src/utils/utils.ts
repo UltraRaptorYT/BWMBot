@@ -101,11 +101,15 @@ export async function getStageName(stage: number): Promise<string> {
   return data[0].stage;
 }
 
-export async function updateCompletedTime(progress_id: number) {
+export async function updateCompletedTime(
+  progress_id: number,
+  skip: boolean = false
+) {
   const { error } = await supabase
     .from("bwm_progress")
     .update({
       time_completed: new Date(),
+      skip: skip,
     })
     .eq("id", progress_id);
   if (error) {
@@ -239,20 +243,21 @@ export type StageType = {
   intro?: string;
   begin?: string;
   error?: string;
-  rules?: string[];
   key?: string[];
-  correct?: string;
+  correct?: string[];
   wrong?: string;
   next?: string;
   text?: string[];
   info?: string[];
   hint?: string;
   extra?: Types.ExtraReplyMessage;
-  skip?: string;
+  skip?: string[];
   hintNotUsed?: string;
   hintUsed?: string;
   usernameInstructions?: string[];
   imageUpload?: string;
+  skipInvalid?: string;
+  noSkip?: string;
 };
 
 export type ProgressType = {

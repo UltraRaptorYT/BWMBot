@@ -40,8 +40,8 @@ bot.action("start_puzzle_hunt", async (ctx: Context) => {
     const stageData = stages[stageName as keyof typeof stages] as StageType;
     let progress = await getCurrentProgress(username);
     await updateCompletedTime(progress.id);
-    if (stageData["rules"]) {
-      for (let rule of stageData["rules"]) {
+    if (stageData["text"]) {
+      for (let rule of stageData["text"]) {
         await sendMessage(ctx, rule, { delay: 100 });
       }
     }
