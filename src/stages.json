@@ -1,8 +1,8 @@
 {
   "default": {
     "correct": ["Well Done! 恭喜您答对了！"],
-    "wrong": "Wrong Answer, Please Try Again! 对不起答案不正确，请再试一次！",
-    "next": "The next stage will be arriving shortly...\n下一道题即将到来...",
+    "wrong": "Incorrect Answer, Please Try Again! 对不起，答案不正确，请再试一次！\n\nIf you cannot see the stage, type \"/resend\". If you need help, type \"/hint\".\n如果无法看到谜题，请输入“/resend”。如果需要帮助，请输入“/hint”。",
+    "next": "⏳The next stage will be arriving shortly...\n⌛下一道题即将到来...",
     "hint": "Sorry, there is no hint for this stage!\n对不起，这道题没有暗示！",
     "skipInvalid": "You cannot skip the question as you haven't used your hint yet.\n\n由于您还没有使用暗示，无法跳过此问题。",
     "skip": [
