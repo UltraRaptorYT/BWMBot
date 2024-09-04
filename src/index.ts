@@ -11,6 +11,7 @@ import {
   sendMessage,
   getStageName,
   StageType,
+  updateCompletedTime,
 } from "./utils/utils";
 
 const BOT_TOKEN = process.env.BOT_TOKEN || "";
@@ -29,13 +30,14 @@ bot.action("start_puzzle_hunt", async (ctx: Context) => {
   try {
     const username = ctx.from?.username || "";
     let stage = Object.keys(stages).indexOf("start");
-    if (stage == -1) {
+    if (stage < 0) {
       return console.log("Error");
     }
     stage += 1;
     await setUserStage(username, stage);
     let stageName = await getStageName(stage);
     const stageData = stages[stageName as keyof typeof stages] as StageType;
+    await updateCompletedTime(stage);
     if (stageData["rules"]) {
       for (let rule of stageData["rules"]) {
         await sendMessage(ctx, rule, { delay: 100 });
