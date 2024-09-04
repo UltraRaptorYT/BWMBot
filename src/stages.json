@@ -26,17 +26,14 @@
   },
   "rules": {
     "rules": [
-      "Before we dive into this thrilling puzzle hunt, let's lay down some ground rules. Take your time to read them carefully—your game timer hasn't started yet, so there's no rush. \n\n在我们开始这场激动人心的寻宝游戏之前，先了解一下基本规则。请仔细阅读，因为您的游戏计时器还没有启动，所以不必着急。",
-      "🧑‍🏫 [Rules: 1/3]\nRemember, you must send only one message at a time, or you might confuse the bot and face penalties! Patience is key as the bot carefully considers your answers.\n\n🧑‍🏫 [游戏规则: 1/3]\n请记住，每次只能发送一条消息，否则可能会让机器人感到困惑并受到惩罚！耐心是关键，因为机器人会仔细思考您的答案。",
-      "🧑‍🏫 [Rules: 2/3]\nYour game will be timed. Each incorrect answer adds a penalty of 5 minutes to your final timing, so answer carefully! Need help solving a Stage? A hint is available, but at a cost. Please refer to the image below for details.\n\nThe timer will be paused during breaks, so you can properly relax 😉\n\n🧑‍🏫 [游戏规则: 2/3]\n您的游戏是有计时的。每个错误答案都会为您的最终时间增加5分钟的惩罚，所以请仔细思考再作答！需要帮助破解难题吗？您可以请求暗示，但这会有代价。请参阅下方图片以获取详细信息。\n\n别担心，休息期间计时器会暂停，让您可以好好放松😉",
+      "Before we dive into this thrilling puzzle hunt, let's lay down some ground rules. Take your time to read them carefully—your game timer hasn't started yet, so there's no rush. \n\n\n在我们开始这场激动人心的寻宝游戏之前，先了解一下基本规则。请仔细阅读，因为您的游戏计时器还没有启动，所以不必着急。",
+      "🧑‍🏫 [Rules: 1/3]\nRemember, you must send only one message at a time, or you might confuse the bot and face penalties! Patience is key as the bot carefully considers your answers.\n\n\n🧑‍🏫 [游戏规则: 1/3]\n请记住，每次只能发送一条消息，否则可能会让机器人感到困惑并受到惩罚！耐心是关键，因为机器人会仔细思考您的答案。",
+      "🧑‍🏫 [Rules: 2/3]\nYour game will be timed. Each incorrect answer adds a penalty of 5 minutes to your final timing, so answer carefully! Need help solving a Stage? A hint is available, but at a cost. Please refer to the image below for details.\n\nThe timer will be paused during breaks, so you can properly relax 😉\n\n\n🧑‍🏫 [游戏规则: 2/3]\n您的游戏是有计时的。每个错误答案都会为您的最终时间增加5分钟的惩罚，所以请仔细思考再作答！需要帮助破解难题吗？您可以请求暗示，但这会有代价。请参阅下方图片以获取详细信息。\n\n别担心，休息期间计时器会暂停，让您可以好好放松😉",
       "image:https://bwm-bot.vercel.app/RuleEn.png",
       "image:https://bwm-bot.vercel.app/RuleCh.png",
-      "🧑‍🏫 [Rules: 3/3]\nLastly, feel free to share your selfies and photos throughout the game. These won't count as answers to any questions, but we'd love to see your journey!\n\nGet ready for an epic adventure, brimming with challenges and mysteries, as you hunt for the secrets of this ancient and coveted recipe.\n\nReady to begin? Type <i><b>'READY'</b></i> and your first puzzle will be on its way. Good luck.\n\n🧑‍🏫 [游戏规则: 3/3]\n最后，请随意在游戏中分享您的自拍和照片。这些不会被算作问题的答案，但我们很期待看到您的冒险之旅！\n\n准备好迎接一场充满挑战和谜团的史诗级冒险了吗？在寻找这个古老而令人垂涎的食谱秘密的过程中，做好准备吧。\n\n准备好了吗？输入<i><b>“准备好了”</b></i>，您的第一个谜题将被发送。祝您好运！"
+      "🧑‍🏫 [Rules: 3/3]\nLastly, feel free to share your selfies and photos throughout the game. These won't count as answers to any questions, but we'd love to see your journey!\n\nGet ready for an epic adventure, brimming with challenges and mysteries, as you hunt for the secrets of this ancient and coveted recipe.\n\nReady to begin? Type <i><b>'READY'</b></i> and your first puzzle will be on its way. Good luck.\n\n\n🧑‍🏫 [游戏规则: 3/3]\n最后，请随意在游戏中分享您的自拍和照片。这些不会被算作问题的答案，但我们很期待看到您的冒险之旅！\n\n准备好迎接一场充满挑战和谜团的史诗级冒险了吗？在寻找这个古老而令人垂涎的食谱秘密的过程中，做好准备吧。\n\n准备好了吗？输入<i><b>“准备好了”</b></i>，您的第一个谜题将被发送。祝您好运！"
     ],
-    "key": [
-      "ready",
-      "准备好了"
-    ],
+    "key": ["ready", "准备好了"],
     "correct": "Let the hunt commence! 开始寻宝吧！",
     "wrong": "Please enter 'READY' 请输入“准备好了”"
   },
@@ -44,13 +41,8 @@
     "text": [
       "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren’s play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<i><u>石</u></i>头园中美<i><u>德</u></i>成行，\n<i><u>孩</u></i>童玩耍转为<i><u>善</u></i>行。\n非土之<i><u>花</u></i>却至纯<i><u>净</u></i>，\n在此神<i><u>圣</u></i>之举中，找寻其<i><u>价</u></i>值。\n我是什么？\"\n\n数一数谜语中有<u>下划线</u>和<i>斜体</i>的字，然后在英文的信息板中跳过刚刚数的词语，找到您要寻找的食材。"
     ],
-    "info": [
-      "Stone Stupas"
-    ],
-    "key": [
-      "lotus",
-      "莲花"
-    ],
+    "info": ["Stone Stupas"],
+    "key": ["lotus", "莲花"],
     "hint": [
       "Hint 1: <span class=\"tg-spoiler\">Stone Towers are a common sight</span>\n暗示 1：<span class=\"tg-spoiler\">石塔随处可见</span>",
       "Hint 2: <span class=\"tg-spoiler\">Located near Avalokitesvara Statue</span>\n暗示 2：<span class=\"tg-spoiler\">您寻找的地位于观世音菩萨像附近</span>"
@@ -58,18 +50,16 @@
   },
   "s2": {
     "text": [
-      "Stage 2:\nLook at the image carefully, it will lead you to the location. When facing the shrine hall, which side can you find the 👶🏻🦁?\n\n\n谜题 2：\n仔细看图片，它会引导您到达位置。面对大殿时，您能在哪一边找到👶🏻🦁？ [请用英文来回答]",
+      "Stage 2:\nCarefully examine the image provided. It will guide you to the right spot. Find where the hidden detail lies, and you'll uncover the answer.\n\n\n谜题 2：\n仔细观察提供的图片，它会引导你找到正确的位置。找出隐藏的细节，答案就在其中。",
       "image:https://bwm-bot.vercel.app/Clue%201.png"
     ],
     "info": [
       "Stone Lions are symbols of protection (yin metal).the male lion represents power (yang metal) over the world in imperial china, while the female lion represents care (yang metal) for the souls in the building."
     ],
-    "key": [
-      "yolk",
-      "蛋黄"
-    ],
+    "key": ["yolk", "蛋黄"],
     "hint": [
-      "Look carefully under the feet of the stone lions\n\n仔细观察石狮的脚底下"
+      "Hint 1: <span class=\"tg-spoiler\">There are 2 white figures standing at the front</span>\n暗示 1：<span class=\"tg-spoiler\">前面有两尊白色雕像</span>",
+      "Hint 2: <span class=\"tg-spoiler\">Pay close attention to what lies beneath their feet</span>\n暗示 2：<span class=\"tg-spoiler\">仔细观察雕像脚下的东西</span>"
     ]
   },
   "s3": {
@@ -79,27 +69,17 @@
     "info": [
       "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
     ],
-    "key": [
-      "mongoose"
-    ],
-    "hint": [
-      "Look for the label inside of the Yellow Dzambhala Statue"
-    ]
+    "key": ["mongoose"],
+    "hint": ["Look for the label inside of the Yellow Dzambhala Statue"]
   },
   "s4": {
     "text": [
       "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?",
       "image:https://bwm-bot.vercel.app/Clue4.png"
     ],
-    "info": [
-      "Time capsule was done in 2022"
-    ],
-    "key": [
-      "preservation"
-    ],
-    "hint": [
-      "count"
-    ]
+    "info": ["Time capsule was done in 2022"],
+    "key": ["preservation"],
+    "hint": ["count"]
   },
   "break": {
     "text": [
@@ -123,62 +103,32 @@
       "Stage 5:\nYou exit the kitchen and walk towards a Buddha Statue at the end of the corridor. It is Thousand-armed and Thousand-eyed Avalokiteshvara. The multitude of hands and eyes is mesmerizing. \nEh, something is missing from my photo. Can you tell me what is it?",
       "image:https://bwm-bot.vercel.app/Clue5.jpeg"
     ],
-    "info": [
-      "12"
-    ],
-    "key": [
-      "beads"
-    ],
+    "info": ["12"],
+    "key": ["beads"],
     "hint": [
       "Look closer it is something GREEN",
       "image:https://bwm-bot.vercel.app/Hint%205.jpeg"
     ]
   },
   "s6": {
-    "text": [
-      "Stage 6:\n"
-    ],
-    "info": [
-      "12"
-    ],
-    "key": [
-      "5"
-    ],
-    "hint": [
-      "count"
-    ]
+    "text": ["Stage 6:\n"],
+    "info": ["12"],
+    "key": ["5"],
+    "hint": ["count"]
   },
   "s7": {
-    "text": [
-      "Stage 7:\n"
-    ],
-    "info": [
-      "12"
-    ],
-    "key": [
-      "i"
-    ],
-    "hint": [
-      "count"
-    ]
+    "text": ["Stage 7:\n"],
+    "info": ["12"],
+    "key": ["i"],
+    "hint": ["count"]
   },
   "s8": {
-    "text": [
-      "Stage 8:\n"
-    ],
-    "info": [
-      "12"
-    ],
-    "key": [
-      "lineage"
-    ],
-    "hint": [
-      "count"
-    ]
+    "text": ["Stage 8:\n"],
+    "info": ["12"],
+    "key": ["lineage"],
+    "hint": ["count"]
   },
   "end": {
-    "text": [
-      "The End"
-    ]
+    "text": ["The End"]
   }
 }
