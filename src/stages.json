@@ -1,7 +1,7 @@
 {
   "default": {
     "correct": ["Well Done! 恭喜您答对了！"],
-    "wrong": "Incorrect Answer, Please Try Again! 对不起，答案不正确，请再试一次！\n\nIf you cannot see the stage, type \"/resend\". If you need help, type \"/hint\".\n如果无法看到谜题，请输入“/resend”。如果需要帮助，请输入“/hint”。",
+    "wrong": "Incorrect Answer, Please Try Again! 对不起，答案不正确，请再试一次！\n\nIf you cannot see the stage, type \"/resend\".\nIf you need help, type \"/hint\".\n\n如果无法看到谜题，请输入“/resend”。\n如果需要帮助，请输入“/hint”。",
     "next": "⏳The next stage will be arriving shortly...\n⌛下一道题即将到来...",
     "hint": "Sorry, there is no hint for this stage!\n对不起，这道题没有暗示！",
     "skipInvalid": "You cannot skip the question as you haven't used your hint yet.\n\n由于您还没有使用暗示，无法跳过此问题。",
@@ -78,20 +78,19 @@
   },
   "s3": {
     "text": [
-      "Stage 3:\nMaking your way towards the side gate, something sparkles at the corner of your eyes✨, lots of GEMS 💎💎💎 and GOLD 💰💵. There is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n"
+      "Stage 3:\nTo your left, you spot some Mid-Autumn Festival posters. Find the ones titled <b><i>\"Symbolic Meanings of Mid-Autumn Festival.\"</i></b>\n\nLook for the English words on the posters and fill them into the provided lines. The letters on the red lines will reveal the word you need.\n\n<b>[FREE HINT]</b> You can click on the photo and use the paintbrush 🖌️ to mark the image for your convenience.\n\n\n谜题 3：\n在你的左边，你会看到一些中秋节的海报。寻找标题为 “中秋节的意义” 的海报。\n\n找到海报上的英文单词，并将它们填入提供的横线上。红色线上的字母将揭示你需要的单词。\n\n<b>[免费暗示]</b> 你可以点击照片，然后使用画笔🖌️方便地标记图像。",
+      "image:https://bwm-bot.vercel.app/Stage3.png"
     ],
-    "info": [
-      "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
+    "info": ["Mid Autumn is all about ..."],
+    "key": ["flour", "面粉"],
+    "hint": [
+      "Hint 1: <span class=\"tg-spoiler\">The words are </span>\n暗示 1：<span class=\"tg-spoiler\">大门前有两尊白色雕像</span>",
+      "Hint 2: <span class=\"tg-spoiler\"></span>\n暗示 2：<span class=\"tg-spoiler\">仔细观察雕像脚下的东西</span>"
     ],
-    "key": ["mongoose", "吐宝鼠"],
-    "hint": ["Look for the label inside of the Yellow Dzambhala Statue"],
     "skip": ["hi"]
   },
   "s4": {
-    "text": [
-      "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?",
-      "image:https://bwm-bot.vercel.app/Clue4.png"
-    ],
+    "text": [],
     "info": ["Time capsule was done in 2022"],
     "key": ["preservation"],
     "hint": ["count"],
@@ -128,14 +127,23 @@
     "skip": ["hi"]
   },
   "s6": {
-    "text": ["Stage 6:\n"],
-    "info": ["12"],
+    "text": [
+      "Stage 6:\n",
+      "Stage 3:\nMaking your way towards the side gate, something sparkles at the corner of your eyes✨, lots of GEMS 💎💎💎 and GOLD 💰💵. There is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n"
+    ],
+    "info": [
+      "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
+    ],
     "key": ["5"],
     "hint": ["count"],
     "skip": ["hi"]
   },
   "s7": {
-    "text": ["Stage 7:\n"],
+    "text": [
+      "Stage 7:\n",
+      "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?",
+      "image:https://bwm-bot.vercel.app/Clue4.png"
+    ],
     "info": ["12"],
     "key": ["i"],
     "hint": ["count"],
