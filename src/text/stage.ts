@@ -58,6 +58,13 @@ const stage = () => {
           file_id,
           ctx.message.video.mime_type || "video/mp4"
         );
+      } else if ("video_note" in ctx.message) {
+        let file_id = ctx.message.video_note.file_id;
+        uploadSuccess = await uploadFile(ctx, username, file_id, "video/mp4");
+      } else if ("voice" in ctx.message) {
+        return;
+      } else if ("sticker" in ctx.message) {
+        return;
       }
       if (uploadSuccess) {
         return await sendMessage(ctx, stages["default"]["imageUpload"]);
