@@ -92,7 +92,7 @@ const stage = () => {
       // Insert Text
       let newStageName = await getStageName(stageVal + 1);
       if (
-        !["rules"].includes(stageName) ||
+        !["rules"].includes(stageName) &&
         !["s1", "break", "end"].includes(newStageName)
       ) {
         await sendMessage(ctx, stages["default"]["next"]);

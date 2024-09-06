@@ -35,7 +35,7 @@
       "image:https://bwm-bot.vercel.app/Rule-EN.png",
       "🧑‍🏫 [Rules: 1/3]\n<b>One message at a time!</b> Sending more may confuse the bot and lead to penalties. Be patient—every answer is carefully considered.\n\n🧑‍🏫 [Rules: 2/3]\n<b>Timed Game:</b> Incorrect answers add 5 minutes to your final time. Hints are available but come at a cost. Don't worry, the timer pauses during breaks.\n\n🧑‍🏫 [Rules: 3/3]\n<b>Share your photos!</b> For every photo you share, you’ll reduce your total time by <b>20 MINUTES</b>! We’d love to see your journey.",
       "image:https://bwm-bot.vercel.app/Rule-CH.png",
-      "🧑‍🏫 [游戏规则: 1/3]\n<b>每次只能发送一条消息</b>  多条消息会让机器人混淆并受到惩罚。耐心点哦！\n\n🧑‍🏫 [游戏规则: 2/3]\n<b>计时游戏:</b>  错误答案会加时5分钟。可以请求提示，但会有代价。休息时计时器会暂停。\n\n🧑‍🏫 [游戏规则: 3/3]\n<b>分享照片！</b>  每分享一张照片，您的总时间将减少 <b>20分钟</b>！我们很期待看到您的旅程。",
+      "🧑‍🏫 [游戏规则: 1/3]\n<b>每次只能发送一条消息</b>  多条消息会让机器人混淆并受到惩罚。耐心点哦！\n\n🧑‍🏫 [游戏规则: 2/3]\n<b>计时游戏:</b>  错误答案会加时5分钟。可以请求暗示，但会有代价。休息时计时器会暂停。\n\n🧑‍🏫 [游戏规则: 3/3]\n<b>分享照片！</b>  每分享一张照片，您的总时间将减少 <b>20分钟</b>！我们很期待看到您的旅程。",
       "Ready for an epic adventure to uncover the lost mooncake recipe? Type <i><b>'READY'</b></i> to start! Good luck!\n\n准备好了吗？输入<i><b>“准备好了”</b></i>开始冒险！祝您好运！"
     ],
     "key": ["ready", "准备好了"],
@@ -78,7 +78,7 @@
   },
   "s3": {
     "text": [
-      "Stage 3:\nTo your left, you spot some Mid-Autumn Festival posters. Find the ones titled <b><i>\"Symbolic Meanings of Mid-Autumn Festival.\"</i></b>\n\nLook for the English words on the posters and fill them into the provided lines. The letters on the red lines will reveal the word you need.\n\n<b>[FREE HINT]</b> You can click on the photo and use the paintbrush 🖌️ to mark the image for your convenience.\n\n\n谜题 3：\n在你的左边，你会看到一些中秋节的海报。寻找标题为 “中秋节的意义” 的海报。\n\n找到海报上的英文单词，并将它们填入提供的横线上。红色线上的字母将揭示你需要的单词。\n\n<b>[免费暗示]</b> 你可以点击照片，然后使用画笔🖌️方便地标记图像。",
+      "Stage 3:\nTo your left, you spot some Mid-Autumn Festival posters. Find the ones titled <b><i>\"Symbolic Meanings of Mid-Autumn Festival.\"</i></b>\n\nLook for the English words on the posters and fill them into the provided lines. The letters on the red lines will reveal the word you need.\n\n<b>[FREE HINT]</b> You can click on the photo and use the paintbrush 🖌️ to mark the image for your convenience.\n\n\n谜题 3：\n在您的左边，您会看到一些中秋节的海报。寻找标题为 “中秋节的意义” 的海报。\n\n找到海报上的英文单词，并将它们填入提供的横线上。红色线上的字母将揭示您需要的单词。\n\n<b>[免费暗示]</b> 您可以点击照片，然后使用画笔🖌️方便地标记图像。",
       "image:https://bwm-bot.vercel.app/Stage3.png"
     ],
     "info": ["Mid Autumn is all about ..."],
@@ -98,7 +98,7 @@
   },
   "break": {
     "text": [
-      "⏸️ [Break Time]\n\nThe game timer is now paused. Take a moment to relax! When you're ready, click the button to \"End Break\" and resume the game.\n\n[Hint: Share a selfie with us and receive a <b>20 minute</b> time deduction from your total game time!]\n\n\n⏸️ [休息时间]\n\n游戏计时器已暂停。趁此机会放松一下！当您准备好时，点击按钮 “结束休息” 继续游戏。\n\n[提示：与我们分享一张自拍，您将获得 <b>20分钟</b> 的时间扣除！]"
+      "⏸️ [Break Time]\n\nThe game timer is now paused. Take a moment to relax! When you're ready, click the button to \"End Break\" and resume the game.\n\n[Hint: Share a selfie with us and receive a <b>20 minute</b> time deduction from your total game time!]\n\n\n⏸️ [休息时间]\n\n游戏计时器已暂停。趁此机会放松一下！当您准备好时，点击按钮 “结束休息” 继续游戏。\n\n[暗示：与我们分享一张自拍，您将获得 <b>20分钟</b> 的时间扣除！]"
     ],
     "extra": {
       "reply_markup": {
@@ -159,8 +159,13 @@
   "end": {
     "text": [
       "image:https://bwm-bot.vercel.app/Mooncake.png",
-      "<b>🏆 {username} 🏆</b>\n<b>The Lost Mooncake Recipe</b>\n\n<b>Congratulations!</b>\nYou’ve successfully completed the puzzle hunt and restored the lost mooncake recipe! 🎉\n\n\n<b>🏆 {username} 🏆</b>\n<b>遗失的月饼食谱</b>\n\n<b>恭喜你！</b>\n你已成功完成寻宝游戏，并恢复了遗失的月饼食谱！🎉",
-      "Click here to view your game page:\n点击这里查看你的游戏页面：\nhttps://bwm-puzzle-hunt.vercel.app/{username}"
+      "<b>🏆 {username} 🏆</b>\n<b>The Lost Mooncake Recipe</b>\n\n<b>Congratulations!</b>\nYou’ve successfully completed the puzzle hunt and restored the lost mooncake recipe! 🎉\n\n\n<b>🏆 {username} 🏆</b>\n<b>遗失的月饼食谱</b>\n\n<b>恭喜您！</b>\n您已成功完成寻宝游戏，并恢复了遗失的月饼食谱！🎉",
+      "Click here to view your game page:\n点击这里查看您的游戏页面：\nhttps://bwm-puzzle-hunt.vercel.app/{username}",
+      "<b><u>Leaderboard  排行榜</u></b>\nCurious where you stand? Check out the leaderboard here:\n好奇您的排名？点击这里查看排行榜：\nhttps://bwm-puzzle-hunt.vercel.app/",
+      "<b><u>We value your feedback!  我们重视您的反馈！</u></b>\nPlease take a moment to share your thoughts:  \n请花一点时间分享您的想法：\nasd",
+      "<b><u>Stay Connected  保持联系</u></b>\nLook out for our future events and updates:  \nhttps://t.me/pujaevents_bwm\n\n关注我们的未来活动和更新：\nhttps://t.me/pujaevent_bwm_cn",
+      "<b><u>Prize Redemption  奖品兑换</u></b>Once you’ve submitted your feedback, head over to <b>Level 4 Prize Counter</b> to show your completion and claim your prize!\n提交反馈后，请前往 <b>四楼的奖品柜台</b> 出示完成证明并领取奖品！",
+      "Thank you for playing, and we look forward to seeing you at our next event!\n\n\n感谢您的参与，我们期待在下次活动中再次见到您！"
     ]
   }
 }
