@@ -26,7 +26,7 @@
     "imageUpload": "<b>Great Shot! 📸</b>\n\nThanks for sharing your photo —— you’ve cut <b>20 MINUTES</b> off your total time. Keep exploring and pay attention to every detail. Good luck!\n\n\n<b>拍得很好！📸</b>\n\n感谢分享照片 —— 您已减少了总时间的 <b>20分钟</b>。继续探索，注意每个细节。祝您好运！"
   },
   "start": {
-    "intro": "<b>Hello {username}! 👋🏻</b>\n\n<b>Welcome to BW Monastery 🎉🎉</b>\n\nLet’s embark on an exciting journey with our puzzle hunt, <i><b>\"The Lost Mooncake Recipe.\"</b></i>\n\n\n<b>您好 {username}！ 👋🏻</b>\n\n<b>欢迎您到吉祥宝聚寺 🎉🎉</b>\n\n让我们踏上一段激动人心的旅程，开始我们的寻宝游戏<i><b>《失落的月饼食谱》。</b></i>",
+    "intro": "<b>Hello {username}! 👋🏻</b>\n\n<b>Welcome to BW Monastery 🎉🎉</b>\n\nLet’s embark on an exciting journey with our puzzle hunt, <i><b>\"The Lost Mooncake Recipe.\"</b></i>\n\n\n<b>您好 {username}！ 👋🏻</b>\n\n<b>欢迎您到吉祥宝聚寺 🎉🎉</b>\n\n让我们踏上一段激动人心的旅程，开始我们的寻宝游戏<i><b>《遗失的月饼食谱》。</b></i>",
     "error": "Start bot by /start 使用 /start来启游戏"
   },
   "rules": {
@@ -157,6 +157,10 @@
     "skip": ["hi"]
   },
   "end": {
-    "text": ["The End"]
+    "text": [
+      "image:https://bwm-bot.vercel.app/Mooncake.png",
+      "<b>🏆 {username} 🏆</b>\n<b>The Lost Mooncake Recipe</b>\n\n<b>Congratulations!</b>\nYou’ve successfully completed the puzzle hunt and restored the lost mooncake recipe! 🎉\n\n\n<b>🏆 {username} 🏆</b>\n<b>遗失的月饼食谱</b>\n\n<b>恭喜你！</b>\n你已成功完成寻宝游戏，并恢复了遗失的月饼食谱！🎉",
+      "Click here to view your game page:\n点击这里查看你的游戏页面：\nhttps://bwm-puzzle-hunt.vercel.app/{username}"
+    ]
   }
 }
