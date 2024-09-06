@@ -25,7 +25,7 @@ const start = () => async (ctx: Context) => {
   }
   const userExist = await checkUserExist(username);
   const photos = await ctx.telegram.getUserProfilePhotos(
-    ctx.message?.from.id || 0
+    ctx.message?.from.id ?? 0
   );
   let uploadSuccess = false;
   if (photos.total_count > 0) {
