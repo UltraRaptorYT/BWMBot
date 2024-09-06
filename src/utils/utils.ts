@@ -16,20 +16,20 @@ export async function setUserLanguage(username: string, language: "EN" | "CH") {
   return;
 }
 
-export async function getUserLanguage(username: string) {
+export async function getUserProfilePhotos(username: string) {
   const { data, error } = await supabase
     .from("bwm_user")
     .select()
     .eq("username", username);
   if (error) {
-    debug("getUserLanguage - failed to run");
-    return "EN";
+    debug("getUserProfilePhotos - failed to run");
+    return "https://img.freepik.com/free-icon/user_318-563642.jpg?w=360";
   }
   if (data.length == 0) {
-    debug(`getUserLanguage - user ${username} not found`);
-    return "EN";
+    debug(`getUserProfilePhotos - user ${username} not found`);
+    return "https://img.freepik.com/free-icon/user_318-563642.jpg?w=360";
   }
-  return data[0].language;
+  return data[0].profile_pic;
 }
 
 export async function checkUserExist(username: string) {
@@ -48,9 +48,10 @@ export async function checkUserExist(username: string) {
   return true;
 }
 
-export async function addUser(username: string) {
+export async function addUser(username: string, profile_pic?: string) {
   const { error } = await supabase.from("bwm_user").upsert({
     username: username,
+    profile_pic: profile_pic,
   });
   if (error) {
     debug("addUser - failed to run");

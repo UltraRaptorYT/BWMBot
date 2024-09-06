@@ -5,6 +5,8 @@ import {
   addUser,
   setUserStage,
   sendMessage,
+  uploadFile,
+  getUserProfilePhotos,
 } from "../utils/utils";
 import stages from "../stages.json";
 
@@ -22,8 +24,21 @@ const start = () => async (ctx: Context) => {
     return;
   }
   const userExist = await checkUserExist(username);
+  const photos = await ctx.telegram.getUserProfilePhotos(
+    ctx.message?.from.id || 0
+  );
+  let uploadSuccess = false;
+  if (photos.total_count > 0) {
+    const file_id = photos.photos[0][photos.photos[0].length - 1].file_id;
+    uploadSuccess = await uploadFile(ctx, username, file_id, "image/jpeg");
+  }
   if (!userExist) {
-    await addUser(username);
+    let file_path =
+      "https://img.freepik.com/free-icon/user_318-563642.jpg?w=360";
+    if (uploadSuccess) {
+      file_path = await getUserProfilePhotos(username);
+    }
+    await addUser(username, file_path);
   }
   setUserStage(username, 1);
   const startTime = Date.now();
