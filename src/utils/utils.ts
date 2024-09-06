@@ -199,9 +199,13 @@ export async function uploadFile(
       console.log(storageVal.error);
       return false;
     }
-    let { error } = await supabase
-      .from("bwm_image")
-      .insert({ username: username, image: storageVal.data.fullPath });
+    let { error } = await supabase.from("bwm_image").insert({
+      username: username,
+      image:
+        process.env.SUPABASE_URL +
+        "/storage/v1/object/public/" +
+        storageVal.data.fullPath,
+    });
     if (error) {
       console.log(error);
       return false;
