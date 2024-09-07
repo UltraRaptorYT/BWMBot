@@ -23,17 +23,17 @@
       "image:https://bwm-bot.vercel.app/Username4.jpeg",
       "5. Type /start to start again\n     输入 /start 重新开始"
     ],
-    "imageUpload": "<b>Great Shot! 📸</b>\n\nThanks for sharing your photo —— you’ve cut <b>20 MINUTES</b> off your total time. Keep exploring and pay attention to every detail. Good luck!\n\n\n<b>拍得很好！📸</b>\n\n感谢分享照片 —— 您已减少了总时间的 <b>20分钟</b>。继续探索，注意每个细节。祝您好运！"
+    "imageUpload": "<b>Great Shot! 📸</b>\n\nThanks for sharing your photo —— you've cut <b>20 MINUTES</b> off your total time. Keep exploring and pay attention to every detail. Good luck!\n\n\n<b>拍得很好！📸</b>\n\n感谢分享照片 —— 您已减少了总时间的 <b>20分钟</b>。继续探索，注意每个细节。祝您好运！"
   },
   "start": {
-    "intro": "<b>Hello {username}! 👋🏻</b>\n\n<b>Welcome to BW Monastery 🎉🎉</b>\n\nLet’s embark on an exciting journey with our puzzle hunt, <i><b>\"The Lost Mooncake Recipe.\"</b></i>\n\n\n<b>您好 {username}！ 👋🏻</b>\n\n<b>欢迎您到吉祥宝聚寺 🎉🎉</b>\n\n让我们踏上一段激动人心的旅程，开始我们的寻宝游戏<i><b>《遗失的月饼食谱》。</b></i>",
+    "intro": "<b>Hello {username}! 👋🏻</b>\n\n<b>Welcome to BW Monastery 🎉🎉</b>\n\nLet's embark on an exciting journey with our puzzle hunt, <i><b>\"The Lost Mooncake Recipe.\"</b></i>\n\n\n<b>您好 {username}！ 👋🏻</b>\n\n<b>欢迎您到吉祥宝聚寺 🎉🎉</b>\n\n让我们踏上一段激动人心的旅程，开始我们的寻宝游戏<i><b>《遗失的月饼食谱》。</b></i>",
     "error": "Start bot by /start 使用 /start来启游戏"
   },
   "rules": {
     "text": [
       "Before we start this exciting puzzle hunt, let's go over the rules. No rush—your timer hasn't started yet.\n\n\n在开始激动人心的寻宝游戏之前，先了解一下规则。别急，计时器还没启动。",
       "image:https://bwm-bot.vercel.app/Rule-EN.png",
-      "🧑‍🏫 [Rules: 1/3]\n<b>One message at a time!</b> Sending more may confuse the bot and lead to penalties. Be patient—every answer is carefully considered.\n\n🧑‍🏫 [Rules: 2/3]\n<b>Timed Game:</b> Incorrect answers add 5 minutes to your final time. Hints are available but come at a cost. Don't worry, the timer pauses during breaks.\n\n🧑‍🏫 [Rules: 3/3]\n<b>Share your photos!</b> For every photo you share, you’ll reduce your total time by <b>20 MINUTES</b>! We’d love to see your journey.",
+      "🧑‍🏫 [Rules: 1/3]\n<b>One message at a time!</b> Sending more may confuse the bot and lead to penalties. Be patient—every answer is carefully considered.\n\n🧑‍🏫 [Rules: 2/3]\n<b>Timed Game:</b> Incorrect answers add 5 minutes to your final time. Hints are available but come at a cost. Don't worry, the timer pauses during breaks.\n\n🧑‍🏫 [Rules: 3/3]\n<b>Share your photos!</b> For every photo you share, you'll reduce your total time by <b>20 MINUTES</b>! We'd love to see your journey.",
       "image:https://bwm-bot.vercel.app/Rule-CH.png",
       "🧑‍🏫 [游戏规则: 1/3]\n<b>每次只能发送一条消息</b>  多条消息会让机器人混淆并受到惩罚。耐心点哦！\n\n🧑‍🏫 [游戏规则: 2/3]\n<b>计时游戏:</b>  错误答案会加时5分钟。可以请求暗示，但会有代价。休息时计时器会暂停。\n\n🧑‍🏫 [游戏规则: 3/3]\n<b>分享照片！</b>  每分享一张照片，您的总时间将减少 <b>20分钟</b>！我们很期待看到您的旅程。",
       "Ready for an epic adventure to uncover the lost mooncake recipe? Type <i><b>'READY'</b></i> to start! Good luck!\n\n准备好了吗？输入<i><b>“准备好了”</b></i>开始冒险！祝您好运！"
@@ -42,13 +42,13 @@
     "correct": [
       "Let the hunt commence!  开始寻宝吧！",
       "image:https://bwm-bot.vercel.app/Intro.png",
-      "Master Yuè, the greatest mooncake maker, created a recipe that brought joy and prosperity. To protect its magic, he hid it in riddles across the land. Only those who solve the puzzles can find the lost recipe and restore the Mid-Autumn Festival’s magic. Begin your journey now—find the hidden keywords and uncover Master Yuè's legendary mooncake!\n\n\n月大师创造了一份能带来快乐和繁荣的秘方，为了保护它，他将秘方隐藏在各地的谜题中。解开谜题，找到失落的秘方，恢复中秋节的魔力。您的旅程现在开始了——寻找隐藏的关键词，重现月大师的传奇月饼！"
+      "Master Yuè, the greatest mooncake maker, created a recipe that brought joy and prosperity. To protect its magic, he hid it in riddles across the land. Only those who solve the puzzles can find the lost recipe and restore the Mid-Autumn Festival's magic. Begin your journey now—find the hidden keywords and uncover Master Yuè's legendary mooncake!\n\n\n月大师创造了一份能带来快乐和繁荣的秘方，为了保护它，他将秘方隐藏在各地的谜题中。解开谜题，找到失落的秘方，恢复中秋节的魔力。您的旅程现在开始了——寻找隐藏的关键词，重现月大师的传奇月饼！"
     ],
     "wrong": "Please enter <i><b>'READY'</b></i>  请输入<i><b>“准备好了”</b></i>"
   },
   "s1": {
     "text": [
-      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren’s play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<u>石</u>头园中美<u>德</u>成行，\n<u>孩</u>童玩耍转为<u>善</u>行。\n非土之<u>花</u>却至纯<u>净</u>，\n在此神<u>圣</u>之举中，找寻其<u>价</u>值。\n我是什么？\"\n\n数一数谜语中带<u>下划线</u>的单词数。然后在英文的信息板中跳过那么多单词即可找到原料。"
+      "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren's play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<u>石</u>头园中美<u>德</u>成行，\n<u>孩</u>童玩耍转为<u>善</u>行。\n非土之<u>花</u>却至纯<u>净</u>，\n在此神<u>圣</u>之举中，找寻其<u>价</u>值。\n我是什么？\"\n\n数一数谜语中带<u>下划线</u>的单词数。然后在英文的信息板中跳过那么多单词即可找到原料。"
     ],
     "info": ["Stone Stupas"],
     "key": ["lotus", "莲花"],
@@ -84,16 +84,21 @@
     "info": ["Mid Autumn is all about ..."],
     "key": ["flour", "面粉"],
     "hint": [
-      "Hint 1: <span class=\"tg-spoiler\">The words are </span>\n暗示 1：<span class=\"tg-spoiler\">大门前有两尊白色雕像</span>",
-      "Hint 2: <span class=\"tg-spoiler\"></span>\n暗示 2：<span class=\"tg-spoiler\">仔细观察雕像脚下的东西</span>"
+      "Hint 1: <span class=\"tg-spoiler\">Look for the words in <b>bold</b>. They will help guide you.</span>\n暗示 1：<span class=\"tg-spoiler\">注意<b>加粗</b>的英文字，它们会为你指引方向。</span>"
     ],
     "skip": ["hi"]
   },
   "s4": {
-    "text": ["Stage 4:\nasd\n\n\n谜题 4：\nasd"],
-    "info": ["Time capsule was done in 2022"],
-    "key": ["preservation"],
-    "hint": ["count"],
+    "text": [
+      "Stage 4:\nSeek out the <b>Wheel of Enlightenment</b>. Start at the flower and spin it clockwise. Connect the icons in order, and the letters you pass will reveal the answer!\n\n\n谜题 4：\n寻找<b>成佛之轮</b>。从花朵开始顺时针旋转。按顺序连接图标，经过的字母将揭示答案！",
+      "image:https://bwm-bot.vercel.app/Stage4.png"
+    ],
+    "info": ["Dharma Wheels are nice"],
+    "key": ["jasmine"],
+    "hint": [
+      "Hint 1: <span class=\"tg-spoiler\">Dharma Wheel</span>\n暗示 1：<span class=\"tg-spoiler\">法轮</span>",
+      "Hint 2: <span class=\"tg-spoiler\">Draw lines to connect the icons. The letters your lines cross, in the order you connect them, will spell out the answer.</span>\n暗示 2：<span class=\"tg-spoiler\">画线连接图标。按照连接的顺序，经过的字母将拼出答案。</span>"
+    ],
     "skip": ["hi"]
   },
   "break": {
@@ -115,15 +120,12 @@
   },
   "s5": {
     "text": [
-      "Stage 5:\nYou exit the kitchen and walk towards a Buddha Statue at the end of the corridor. It is Thousand-armed and Thousand-eyed Avalokiteshvara. The multitude of hands and eyes is mesmerizing. \nEh, something is missing from my photo. Can you tell me what is it?",
+      "Stage 5:\nasda\n\n\n谜题 5：\n",
       "image:https://bwm-bot.vercel.app/Clue5.jpeg"
     ],
     "info": ["12"],
-    "key": ["beads"],
-    "hint": [
-      "Look closer it is something GREEN",
-      "image:https://bwm-bot.vercel.app/Hint%205.jpeg"
-    ],
+    "key": ["Time capsule was done in 2022"],
+    "hint": ["asd"],
     "skip": ["hi"]
   },
   "s6": {
@@ -140,13 +142,15 @@
   },
   "s7": {
     "text": [
-      "Stage 7:\n",
-      "Stage 4:\nLet's RAMP UP the difficulty, look for a TIME CAPSULE. Make your way through the maze below from start to end. In the maze, you can only go through things found in the time capsule. Tell me what word you will form on your way out?",
-      "image:https://bwm-bot.vercel.app/Clue4.png"
+      "Stage 7:\nAt the back of the monastery, directly behind the Shrine Hall, you'll see 4 pictures of Buddha holding different items. From left to right, observe what they hold and fill in the squares for the answer to pop!\n\n\n谜题 7：\n在寺院大殿后面，您会看到四幅佛像图，他们手中拿着不同的物品。依次从左到右观察，填写方框以揭示答案！",
+      "image:https://bwm-bot.vercel.app/Stage7.png"
     ],
     "info": ["12"],
-    "key": ["i"],
-    "hint": ["count"],
+    "key": ["almond"],
+    "hint": [
+      "Hint 1: <span class=\"tg-spoiler\">Look for the beautiful decorations around the pictures. They will help guide you to the location.</span>\n暗示 1：<span class=\"tg-spoiler\">注意图片周围的精美装饰，它们会指引你找到位置。</span>",
+      "Hint 2: <span class=\"tg-spoiler\">Shade the boxes in the correct order, and a word will be revealed.</span>\n暗示 2：<span class=\"tg-spoiler\">根据顺序填色方框，答案会显现出来。</span>"
+    ],
     "skip": ["hi"]
   },
   "s8": {
@@ -159,7 +163,7 @@
   "end": {
     "text": [
       "image:https://bwm-bot.vercel.app/Mooncake.png",
-      "<b>🏆 {username} 🏆</b>\n<b>The Lost Mooncake Recipe  遗失的月饼食谱</b>\n\n<b>Congratulations!</b>\nYou’ve successfully completed the puzzle hunt and restored the lost mooncake recipe! 🎉\n\n<b>恭喜您！</b>\n您已成功完成寻宝游戏，并恢复了遗失的月饼食谱！🎉",
+      "<b>🏆 {username} 🏆</b>\n<b>The Lost Mooncake Recipe  遗失的月饼食谱</b>\n\n<b>Congratulations!</b>\nYou've successfully completed the puzzle hunt and restored the lost mooncake recipe! 🎉\n\n<b>恭喜您！</b>\n您已成功完成寻宝游戏，并恢复了遗失的月饼食谱！🎉",
       "Click here to view your game page 点击这里查看您的游戏页面：\nhttps://bwm-puzzle-hunt.vercel.app/{username}\n\n<b><u>Leaderboard  排行榜</u></b>\nCurious where you stand? Check out the leaderboard here:\n好奇您的排名？点击这里查看排行榜：\nhttps://bwm-puzzle-hunt.vercel.app/\n\n<b><u>We value your feedback!  我们重视您的反馈！</u></b>\nPlease take a moment to share your thoughts:  \n请花一点时间分享您的想法：\ngoogleform\n\n<b><u>Stay Connected  保持联系</u></b>\nLook out for our future events and updates:  \nhttps://t.me/pujaevents_bwm\n\n关注我们的未来活动和更新：\nhttps://t.me/pujaevent_bwm_cn\n\n<b><u>Prize Redemption  奖品兑换</u></b>\nAfter submitting your feedback, head to <b>Level 4 Prize Counter</b> to claim your prize!\n提交反馈后，前往 <b>四楼的奖品柜台</b> 领取奖品！",
       "<b>Thank you for playing! 感谢您的参与！</b>\n\nWe look forward to seeing you at our next event!\n我们期待在下次活动中再次见到您！"
     ]
