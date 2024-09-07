@@ -91,7 +91,7 @@
   "s4": {
     "text": [
       "Stage 4:\nSeek out the <b>Wheel of Enlightenment</b>. Start at the flower and spin it clockwise. Connect the icons in order, and the letters you pass will reveal the answer!\n\n\n谜题 4：\n寻找<b>成佛之轮</b>。从花朵开始顺时针旋转。按顺序连接图标，经过的字母将揭示答案！",
-      "image:https://bwm-bot.vercel.app/Stage4.png"
+      "image:https://bwm-bot.vercel.app/Stage4New.png"
     ],
     "info": ["Dharma Wheels are nice"],
     "key": ["jasmine"],
