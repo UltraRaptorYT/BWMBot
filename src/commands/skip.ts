@@ -37,7 +37,7 @@ const skip = () => async (ctx: Context) => {
       }
       if (stageData["info"]) {
         for (let info of stageData["info"]) {
-          await sendMessage(ctx, info);
+          await sendMessage(ctx, info, {delay:250});
         }
       }
       await setUserStage(username, stageVal + 1);
@@ -47,7 +47,7 @@ const skip = () => async (ctx: Context) => {
         !["rules"].includes(stageName) ||
         !["s1", "break", "end"].includes(newStageName)
       ) {
-        await sendMessage(ctx, stages["default"]["next"]);
+        await sendMessage(ctx, stages["default"]["next"], {delay: 500});
       }
       const newStageData = stages[
         newStageName as keyof typeof stages
