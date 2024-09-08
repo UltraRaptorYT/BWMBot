@@ -165,11 +165,11 @@
   },
   "s8": {
     "text": [
-      "Stage 8:\nWalking back out to the front of the Monastery, \n\n\n谜题 8：\n走到您看到食物图片的地方。解读英文海报中的线索，拼接字母以揭示您的下一步！",
-      "image:https://bwm-bot.vercel.app/Stage8.png"
+      "Stage 8:\nAs you walk back to the front of the Monastery, you hear 🎐 wind chime ring 🔔. Find the poster about \"The Merit of Offering Bells\". Look at the Chinese text, connect the words in the given order, trace them, and you’ll find your answer. \n\n\n谜题 8：\n当你走回寺院前方时，🎐 风铃响起 🔔。找到关于供奉钟声功德的海报。查看中文部分，按顺序连接单词，勾勒出来，你将找到答案！",
+      "image:https://bwm-bot.vercel.app/Stage8New.png"
     ],
     "info": ["Food"],
-    "key": ["beans", "豆"],
+    "key": ["syrup", "糖浆"],
     "hint": [
       "Hint 1: <span class=\"tg-spoiler\">P = Paragraph   W = Word   L = Letter</span>\n暗示 1：<span class=\"tg-spoiler\">P = 段落   W = 字   L = 字母</span>",
       "Hint 2: <span class=\"tg-spoiler\">The first word is \"READ\"</span>\n暗示 2：<span class=\"tg-spoiler\">下一步的第一个字是\"READ\"</span>"
