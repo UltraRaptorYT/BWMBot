@@ -50,10 +50,12 @@
     "text": [
       "Stage 1:\nThe following riddle will guide you to where you seek.\n\n\"In the garden of <u>stones</u>, where <u>virtues</u> align,\nChildren's play turns to <u>deeds</u> divine.\nA <u>blossom</u> of <u>purity</u>, though not of the <u>earth</u>,\nIn this <u>sacred</u> act, you'll find its <u>worth</u>.\nWhat am I?\"\n\nCount the number of <u>UNDERLINED</u> words in the riddle. Skip that many words on the English Information Panel to find the ingredient.\n\n\n谜题 1:\n以下谜语将引导您找到您要寻找的地方。\n\n\"<u>石</u>头园中美<u>德</u>成行，\n<u>孩</u>童玩耍转为<u>善</u>行。\n非土之<u>花</u>却至纯<u>净</u>，\n在此神<u>圣</u>之举中，找寻其<u>价</u>值。\n我是什么？\"\n\n数一数谜语中带<u>下划线</u>的单词数。然后在英文的信息板中跳过那么多单词即可找到原料。"
     ],
-    "info": ["Stone Stupas"],
+    "info": [
+      "Gemstone Stupa represents collective merit in Buddhism. Adding a stone symbolizes your path to enlightenment.\n\n聚石成塔象征着佛教中的集体功德。添加一块石头象征着你的成佛之路。"
+    ],
     "key": ["lotus", "莲花"],
     "hint": [
-      "Hint 1: <span class=\"tg-spoiler\">Stone Towers are a common sight</span>\n暗示 1：<span class=\"tg-spoiler\">石塔随处可见</span>",
+      "Hint 1: <span class=\"tg-spoiler\">Gemstone Towers are a common sight</span>\n暗示 1：<span class=\"tg-spoiler\">宝石塔随处可见</span>",
       "Hint 2: <span class=\"tg-spoiler\">Located near Avalokitesvara Statue</span>\n暗示 2：<span class=\"tg-spoiler\">您寻找的地位于观世音菩萨像附近</span>"
     ],
     "skip": [
@@ -67,37 +69,43 @@
       "image:https://bwm-bot.vercel.app/Clue%201.png"
     ],
     "info": [
-      "Stone Lions are symbols of protection (yin metal).the male lion represents power (yang metal) over the world in imperial china, while the female lion represents care (yang metal) for the souls in the building."
+      "Stone lions symbolize protection and strength. The male lion, typically on the right, holds a ball representing power, while the female, on the left, cradles a cub, symbolizing nurturing and care.\n\n石狮象征着保护和力量。通常，雄狮位于右侧，踩着一个代表权力的球，而雌狮位于左侧，抱着一只幼狮，象征着养育和照顾。"
     ],
     "key": ["yolk", "蛋黄"],
     "hint": [
       "Hint 1: <span class=\"tg-spoiler\">There are 2 white statues standing at the front gate</span>\n暗示 1：<span class=\"tg-spoiler\">大门前有两尊白色雕像</span>",
       "Hint 2: <span class=\"tg-spoiler\">Pay close attention to what lies beneath their feet</span>\n暗示 2：<span class=\"tg-spoiler\">仔细观察雕像脚下的东西</span>"
     ],
-    "skip": ["hi"]
+    "skip": [
+      "The answer was \"YOLK\".  答案是\"蛋黄\"\n\nFind the Stone Lion with the baby cub at her paws. Between her legs, you'll discover the word.\n\n找到脚边有幼崽的石狮子。她的两腿之间藏着答案。"
+    ]
   },
   "s3": {
     "text": [
-      "Stage 3:\nTo your left, you spot some Mid-Autumn Festival posters. Find the ones titled <b><i>\"Symbolic Meanings of Mid-Autumn Festival.\"</i></b>\n\nLook for the English words on the posters and fill them into the provided lines. The letters on the red lines will reveal the word you need.\n\n<b>[FREE HINT]</b> You can click on the photo and use the paintbrush 🖌️ to mark the image for your convenience.\n\n\n谜题 3：\n在您的左边，您会看到一些中秋节的海报。寻找标题为 “中秋节的意义” 的海报。\n\n找到海报上的英文单词，并将它们填入提供的横线上。红色线上的字母将揭示您需要的单词。\n\n<b>[免费暗示]</b> 您可以点击照片，然后使用画笔🖌️方便地标记图像。",
-      "image:https://bwm-bot.vercel.app/Stage3.png"
-    ],
-    "info": ["Mid Autumn is all about ..."],
-    "key": ["flour", "面粉"],
-    "hint": [
-      "Hint 1: <span class=\"tg-spoiler\">Look for the words in <b>bold</b>. They will help guide you.</span>\n暗示 1：<span class=\"tg-spoiler\">注意<b>加粗</b>的英文字，它们会为你指引方向。</span>"
-    ],
-    "skip": ["hi"]
-  },
-  "s4": {
-    "text": [
-      "Stage 4:\nSeek out the <b>Wheel of Enlightenment</b>. Start at the flower and spin it clockwise. Connect the icons in order, and the letters you pass will reveal the answer!\n\n\n谜题 4：\n寻找<b>成佛之轮</b>。从花朵开始顺时针旋转。按顺序连接图标，经过的字母将揭示答案！",
+      "Stage 3:\nSeek out the <b>Wheel of Enlightenment</b>. Start at the flower and spin it clockwise. Connect the icons in order, and the letters you pass will reveal the answer!\n\n\n谜题 3：\n寻找<b>成佛之轮</b>。从花朵开始顺时针旋转。按顺序连接图标，经过的字母将揭示答案！",
       "image:https://bwm-bot.vercel.app/Stage4New.png"
     ],
     "info": ["Dharma Wheels are nice"],
-    "key": ["jasmine"],
+    "key": ["jasmine", "茉莉花"],
     "hint": [
       "Hint 1: <span class=\"tg-spoiler\">Dharma Wheel</span>\n暗示 1：<span class=\"tg-spoiler\">法轮</span>",
       "Hint 2: <span class=\"tg-spoiler\">Draw lines to connect the icons. The letters your lines cross, in the order you connect them, will spell out the answer.</span>\n暗示 2：<span class=\"tg-spoiler\">画线连接图标。按照连接的顺序，经过的字母将拼出答案。</span>"
+    ],
+    "skip": [
+      "The answer was \"YOLK\".  答案是\"蛋黄\"\n\nasdfghjk\n\n找到脚边有幼崽的石狮子。她的两腿之间藏着答案。"
+    ]
+  },
+  "s4": {
+    "text": [
+      "Stage 4:\nAs you approach the side gate, a glint catches your eye ✨. Before you lies a treasure trove of gems 💎 and gold 💰. Among them, you spot a peach-looking Mani Jewel 🍑 and a mongoose 🦝, each with mysterious labels. Can you decipher the code and fill in the blanks? The numbers will guide you to the correct order of the letters.\n\n<b>[FREE HINT]</b> You can click on the photo and use the paintbrush 🖌️ to mark the image for your convenience.\n\n\n谜题 4：\n当你走向侧门时，眼角闪过一道光 ✨。你面前是一堆宝石 💎 和黄金 💰。其中，你看到了一个桃子形状的摩尼宝 🍑 和一只吐宝鼠 🦝，它们各自有神秘的标签。你能解开谜题并填上空格吗？数字会指引你排列正确的字母顺序。\n\n<b>[免费暗示]</b> 您可以点击照片，然后使用画笔🖌️方便地标记图像。",
+      "image:https://bwm-bot.vercel.app/Stage5.png"
+    ],
+    "info": [
+      "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
+    ],
+    "key": ["sesame", "芝麻"],
+    "hint": [
+      "Hint 1: <span class=\"tg-spoiler\">Find the Yellow Dzambhala Statue</span>\n暗示 1：<span class=\"tg-spoiler\">寻找黄财神像</span>"
     ],
     "skip": ["hi"]
   },
@@ -120,44 +128,52 @@
   },
   "s5": {
     "text": [
-      "Stage 5:\nasda\n\n\n谜题 5：\n",
-      "image:https://bwm-bot.vercel.app/Clue5.jpeg"
+      "Stage 5:\nWalking towards the back of the monastery, you spot some Mid-Autumn Festival posters. Find the ones titled <b><i>\"Symbolic Meanings of Mid-Autumn Festival.\"</i></b>\n\nLook for the English words on the posters and fill them into the provided lines. The letters on the red lines will reveal the word you need.\n\n<b>[FREE HINT]</b> You can click on the photo and use the paintbrush 🖌️ to mark the image for your convenience.\n\n\n谜题 5：\n走到寺院后面，您会看到一些中秋节的海报。寻找标题为 “中秋节的意义” 的海报。\n\n找到海报上的英文单词，并将它们填入提供的横线上。红色线上的字母将揭示您需要的单词。\n\n<b>[免费暗示]</b> 您可以点击照片，然后使用画笔🖌️方便地标记图像。",
+      "image:https://bwm-bot.vercel.app/Stage3.png"
     ],
-    "info": ["12"],
-    "key": ["Time capsule was done in 2022"],
-    "hint": ["asd"],
+    "key": ["flour", "面粉"],
+    "hint": [
+      "Hint 1: <span class=\"tg-spoiler\">Look for the words in <b>bold</b>. They will help guide you.</span>\n暗示 1：<span class=\"tg-spoiler\">注意<b>加粗</b>的英文字，它们会为您指引方向。</span>"
+    ],
     "skip": ["hi"]
   },
   "s6": {
     "text": [
-      "Stage 6:\n",
-      "Stage 3:\nMaking your way towards the side gate, something sparkles at the corner of your eyes✨, lots of GEMS 💎💎💎 and GOLD 💰💵. There is a small hidden creature spewing GOLD 💰💰💰, what creature is that?\n"
+      "Stage 6:\nAt the back of the monastery, directly behind the Shrine Hall, you'll see 4 pictures of Buddha holding different items. From left to right, observe what they hold and fill in the squares for the answer to pop!\n\n\n谜题 6：\n在寺院大殿后面，您会看到四幅佛像图，他们手中拿着不同的物品。依次从左到右观察，填写方框以揭示答案！",
+      "image:https://bwm-bot.vercel.app/Stage7New.png"
     ],
-    "info": [
-      "Did you know that the Yellow Dzambhala was assigned to help all beings overcome poverty and grant wealth to them."
-    ],
-    "key": ["5"],
-    "hint": ["count"],
-    "skip": ["hi"]
-  },
-  "s7": {
-    "text": [
-      "Stage 7:\nAt the back of the monastery, directly behind the Shrine Hall, you'll see 4 pictures of Buddha holding different items. From left to right, observe what they hold and fill in the squares for the answer to pop!\n\n\n谜题 7：\n在寺院大殿后面，您会看到四幅佛像图，他们手中拿着不同的物品。依次从左到右观察，填写方框以揭示答案！",
-      "image:https://bwm-bot.vercel.app/Stage7.png"
-    ],
-    "info": ["12"],
-    "key": ["almond"],
+    "info": ["hu"],
+    "key": ["almond", "杏仁"],
     "hint": [
-      "Hint 1: <span class=\"tg-spoiler\">Look for the beautiful decorations around the pictures. They will help guide you to the location.</span>\n暗示 1：<span class=\"tg-spoiler\">注意图片周围的精美装饰，它们会指引你找到位置。</span>",
+      "Hint 1: <span class=\"tg-spoiler\">Look for the beautiful decorations around the pictures. They will help guide you to the location.</span>\n暗示 1：<span class=\"tg-spoiler\">注意图片周围的精美装饰，它们会指引您找到位置。</span>",
       "Hint 2: <span class=\"tg-spoiler\">Shade the boxes in the correct order, and a word will be revealed.</span>\n暗示 2：<span class=\"tg-spoiler\">根据顺序填色方框，答案会显现出来。</span>"
     ],
     "skip": ["hi"]
   },
-  "s8": {
-    "text": ["Stage 8:\n"],
+  "s7": {
+    "text": [
+      "Stage 7:\nWalk until you find where the images of food appear. Decipher the clues hidden in the descriptions, and piece together the letters to reveal your next move.\n\n\n谜题 7：\n走到您看到食物图片的地方。解读英文海报中的线索，拼接字母以揭示您的下一步！",
+      "image:https://bwm-bot.vercel.app/Stage8.png"
+    ],
     "info": ["12"],
-    "key": ["lineage"],
-    "hint": ["count"],
+    "key": ["beans", "豆"],
+    "hint": [
+      "Hint 1: <span class=\"tg-spoiler\">P = Paragraph   W = Word   L = Letter</span>\n暗示 1：<span class=\"tg-spoiler\">P = 段落   W = 字   L = 字母</span>",
+      "Hint 2: <span class=\"tg-spoiler\">The first word is \"READ\"</span>\n暗示 2：<span class=\"tg-spoiler\">下一步的第一个字是\"READ\"</span>"
+    ],
+    "skip": ["hi"]
+  },
+  "s8": {
+    "text": [
+      "Stage 8:\nWalking back out to the front of the Monastery, \n\n\n谜题 8：\n走到您看到食物图片的地方。解读英文海报中的线索，拼接字母以揭示您的下一步！",
+      "image:https://bwm-bot.vercel.app/Stage8.png"
+    ],
+    "info": ["Food"],
+    "key": ["beans", "豆"],
+    "hint": [
+      "Hint 1: <span class=\"tg-spoiler\">P = Paragraph   W = Word   L = Letter</span>\n暗示 1：<span class=\"tg-spoiler\">P = 段落   W = 字   L = 字母</span>",
+      "Hint 2: <span class=\"tg-spoiler\">The first word is \"READ\"</span>\n暗示 2：<span class=\"tg-spoiler\">下一步的第一个字是\"READ\"</span>"
+    ],
     "skip": ["hi"]
   },
   "end": {

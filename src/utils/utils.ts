@@ -228,6 +228,10 @@ export async function sendMessage(
   message: string,
   { delay = 0, reply = false, extra = {} }: SendMessageOptions = {}
 ) {
+  if (!message) {
+    console.log("Message Failed to send");
+    return;
+  }
   const messageId = ctx.message?.message_id;
   if (message.startsWith("image:")) {
     await ctx.sendPhoto(message.replace("image:", ""));
