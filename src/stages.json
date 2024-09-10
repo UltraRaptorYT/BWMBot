@@ -59,7 +59,7 @@
       "Hint 2: <span class=\"tg-spoiler\">Located near Avalokitesvara Statue</span>\n暗示 2：<span class=\"tg-spoiler\">您寻找的地位于观世音菩萨像附近</span>"
     ],
     "skip": [
-      "The answer was \"LOTUS\".  答案是\"LOTUS\"\n\nThere are a total of 8 underlined words in the riddle.\n\n谜底中带下划线的单词共有8个。",
+      "The answer was \"LOTUS\".  答案是\"LOTUS\"\n\nThere are a total of 8 underlined words in the riddle. Skipping 8 words on the English Description will give you the answer.\n\n谜底中带下划线的单词共有8个。跳过英文说明中的八个字就会给你答案。",
       "image:https://bwm-bot.vercel.app/Stage1Skip.jpg"
     ]
   },
