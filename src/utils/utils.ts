@@ -179,7 +179,8 @@ export async function uploadFile(
   ctx: Context,
   username: string,
   file_id: string,
-  type: string
+  type: string,
+  approved: boolean = true
 ): Promise<boolean> {
   try {
     const fileLink = await ctx.telegram.getFileLink(file_id);
@@ -205,7 +206,7 @@ export async function uploadFile(
         process.env.SUPABASE_URL +
         "/storage/v1/object/public/" +
         storageVal.data.fullPath,
-      approved: true,
+      approved: approved,
     });
     if (error) {
       console.log(error);

@@ -30,7 +30,13 @@ const start = () => async (ctx: Context) => {
   let uploadSuccess = false;
   if (photos.total_count > 0) {
     const file_id = photos.photos[0][photos.photos[0].length - 1].file_id;
-    uploadSuccess = await uploadFile(ctx, username, file_id, "image/jpeg");
+    uploadSuccess = await uploadFile(
+      ctx,
+      username,
+      file_id,
+      "image/jpeg",
+      false
+    );
   }
   if (!userExist) {
     let file_path =
