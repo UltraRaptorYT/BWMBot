@@ -11,6 +11,7 @@ import {
   setUserStage,
   updateCompletedTime,
   logAnswer,
+  calculateTiming,
   uploadFile,
 } from "../utils/utils";
 
@@ -34,6 +35,8 @@ const stage = () => {
     const stageData = stages[stageName as keyof typeof stages] as StageType;
     if (stageName == "start") {
       return await sendMessage(ctx, stages["start"]["error"]);
+    } else if (stageName == "end") {
+      return await sendMessage(ctx, stages["end"]["error"]);
     }
     console.log(ctx);
 
@@ -96,6 +99,11 @@ const stage = () => {
         !["s1", "break", "end"].includes(newStageName)
       ) {
         await sendMessage(ctx, stages["default"]["next"]);
+      }
+
+      if (newStageName == "end") {
+        // Calculation
+        await calculateTiming(username);
       }
       const newStageData = stages[
         newStageName as keyof typeof stages

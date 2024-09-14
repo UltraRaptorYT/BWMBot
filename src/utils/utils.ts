@@ -5,13 +5,13 @@ import axios from "axios";
 
 const debug = createDebug("bot:utils");
 
-export async function setUserLanguage(username: string, language: "EN" | "CH") {
+export async function updateUser(username: string, data: any) {
   const { error } = await supabase
     .from("bwm_user")
-    .update({ language })
+    .update(data)
     .eq("username", username);
   if (error) {
-    debug("setUserLanguage - failed to run");
+    debug("updateUser - failed to run");
   }
   return;
 }
@@ -218,6 +218,151 @@ export async function uploadFile(
   }
 }
 
+async function getProgress(username: string) {
+  let output: {
+    startTime?: Date;
+    endTime?: Date;
+    breakData?: ProgressType;
+    questionTiming?: ProgressType[];
+  } = {};
+  const { data, error } = await supabase
+    .from("bwm_progress")
+    .select("*,bwm_stage(*)")
+    .eq("username", username)
+    .order("time_started", { ascending: false })
+    .order("time_completed", { ascending: false });
+  if (error) {
+    console.log(error);
+    return output;
+  }
+  if (data.length < 1) {
+    return output;
+  }
+  let startTimeFilter = data.filter((e) => {
+    return e.stage == 3;
+  });
+  let start: Date, end: Date;
+  if (startTimeFilter.length && startTimeFilter[0].time_started) {
+    console.log(startTimeFilter[0].time_started);
+    start = new Date(startTimeFilter[0].time_started);
+    output.startTime = start;
+  }
+  console.log(data);
+  let endTimeFilter = data.filter((e) => {
+    return e.stage == 11;
+  });
+  if (endTimeFilter.length && endTimeFilter[0].time_completed) {
+    console.log(endTimeFilter[0].time_completed);
+    end = new Date(endTimeFilter[0].time_completed);
+    output.endTime = end;
+  }
+  let dataFilter = data.filter((e) => {
+    return (
+      new Date(e.time_started) >= start &&
+      new Date(e.time_completed) <= end &&
+      e.stage < 12 &&
+      e.stage != 7
+    );
+  });
+  output.breakData = data.filter((e) => e.stage == 7)[0];
+  output.questionTiming = dataFilter;
+  return output;
+}
+
+async function getHintData(username: string, startTime: Date, endTime: Date) {
+  const { data, error } = await supabase
+    .from("bwm_hint")
+    .select()
+    .eq("type", "hint")
+    .eq("username", username);
+  if (error) {
+    console.log(error);
+    return [];
+  }
+  let filterData = data.filter((e) => {
+    return (
+      new Date(e.created_at) <= endTime && new Date(e.created_at) >= startTime
+    );
+  });
+  console.log(filterData);
+  return filterData;
+}
+
+async function getLogData(username: string, startTime: Date, endTime: Date) {
+  const { data, error } = await supabase
+    .from("bwm_log")
+    .select()
+    .eq("isCorrect", false)
+    .eq("username", username);
+  if (error) {
+    console.log(error);
+    return [];
+  }
+  let filterData = data.filter((e) => {
+    return (
+      new Date(e.created_at) <= endTime && new Date(e.created_at) >= startTime
+    );
+  });
+  console.log(filterData);
+  return filterData;
+}
+
+async function getPhotoData(username: string, startTime: Date, endTime: Date) {
+  const { data, error } = await supabase
+    .from("bwm_image")
+    .select()
+    .eq("username", username);
+  if (error) {
+    console.log(error);
+    return false;
+  }
+  let filterData = data.filter((e) => {
+    return (
+      new Date(e.created_at) <= endTime && new Date(e.created_at) >= startTime
+    );
+  });
+  if (filterData.length > 0) {
+    return true;
+  }
+  return false;
+}
+
+export async function calculateTiming(username: string) {
+  let output = await getProgress(username);
+  if (!output) {
+    return;
+  }
+  let { startTime, endTime, breakData, questionTiming } = output;
+  if (!(startTime && endTime && questionTiming && breakData)) {
+    return;
+  }
+  let hintData = await getHintData(username, startTime, endTime);
+  let logData = await getLogData(username, startTime, endTime);
+  let hasPhoto = await getPhotoData(username, startTime, endTime);
+  let diff = Math.abs(endTime.getTime() - startTime.getTime());
+
+  let penalties =
+    logData.length * 5 +
+    hintData.length * 10 +
+    questionTiming.filter((e) => e.skip).length * 20;
+  let bonus = hasPhoto ? 20 : 0;
+  let breakTime =
+    new Date(breakData?.time_completed || 0).getTime() -
+    new Date(breakData?.time_started || 0).getTime();
+
+  let totalTime = diff - bonus * 60000 - breakTime + penalties * 60000;
+
+  const totalHours = Math.floor(totalTime / 3600000);
+  const totalMinutes = Math.floor((totalTime % 3600000) / 60000);
+  const totalSeconds = Math.floor((totalTime % 60000) / 1000);
+  updateUser(username, {
+    completed: true,
+    best_time: `${totalHours}:${String(totalMinutes).padStart(2, "0")}:${String(
+      totalSeconds
+    ).padStart(2, "0")}`,
+  });
+}
+
 interface SendMessageOptions {
   delay?: number;
   reply?: boolean;
@@ -274,6 +419,8 @@ export type ProgressType = {
   id: number;
   username: string;
   stage: number;
+  skip: boolean;
   time_started: string;
   time_completed?: string;
+  bwm_stage?: { id: number; stage: string };
 };

@@ -199,6 +199,7 @@
       "<b>🏆 {username} 🏆</b>\n<b>The Lost Mooncake Recipe  遗失的月饼食谱</b>\n\n<b>Congratulations!</b>\nYou've successfully completed the puzzle hunt and restored the lost mooncake recipe! 🎉\n\n<b>恭喜您！</b>\n您已成功完成寻宝游戏，并恢复了遗失的月饼食谱！🎉",
       "Click here to view your game page 点击这里查看您的游戏页面：\nhttps://bwm-puzzle-hunt.vercel.app/{username}\n\n<b><u>Leaderboard  排行榜</u></b>\nCurious where you stand? Check out the leaderboard here:\n好奇您的排名？点击这里查看排行榜：\nhttps://bwm-puzzle-hunt.vercel.app/\n\n<b><u>We value your feedback!  我们重视您的反馈！</u></b>\nPlease take a moment to share your thoughts:  \n请花一点时间分享您的想法：\nhttps://forms.gle/Yd3FjHgbcBkMgBEc9\n\n<b><u>Stay Connected  保持联系</u></b>\nLook out for our future events and updates:  \nhttps://t.me/pujaevents_bwm\n\n关注我们的未来活动和更新：\nhttps://t.me/pujaevent_bwm_cn\n\n<b><u>Prize Redemption  奖品兑换</u></b>\nAfter submitting your feedback, head to <b>Level 4 Prize Counter</b> to claim your prize!\n提交反馈后，前往 <b>四楼的奖品柜台</b> 领取奖品！",
       "<b>Thank you for playing! 感谢您的参与！</b>\n\nWe look forward to seeing you at our next event!\n我们期待在下次活动中再次见到您！"
-    ]
+    ],
+    "error": "Wanna play again?\nStart bot by /start\n\n想再玩一次吗？\n使用 /start来启游戏"
   }
 }
