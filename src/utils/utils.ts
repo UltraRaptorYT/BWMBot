@@ -205,6 +205,7 @@ export async function uploadFile(
         process.env.SUPABASE_URL +
         "/storage/v1/object/public/" +
         storageVal.data.fullPath,
+      approved: true,
     });
     if (error) {
       console.log(error);

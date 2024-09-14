@@ -1,7 +1,7 @@
 {
   "default": {
     "correct": ["Well Done! 恭喜您答对了！"],
-    "wrong": "Incorrect Answer, Please Try Again! 对不起，答案不正确，请再试一次！\n\nIf you cannot see the stage, type \"/resend\".\nIf you need help, type \"/hint\".\n\n如果无法看到谜题，请输入“/resend”。\n如果需要帮助，请输入“/hint”。",
+    "wrong": "Incorrect Answer, Please Try Again!\n对不起，答案不正确，请再试一次！\n\nIf you cannot see the stage, type \"/resend\".\nIf you need help, type \"/hint\".\n\n如果无法看到谜题，请输入“/resend”。\n如果需要帮助，请输入“/hint”。",
     "next": "⏳The next stage will be arriving shortly...\n⌛下一道题即将到来...",
     "hint": "Sorry, there is no hint for this stage!\n对不起，这道题没有暗示！",
     "skipInvalid": "You cannot skip the question as you haven't used your hint yet.\n\n由于您还没有使用暗示，无法跳过此问题。",
@@ -166,7 +166,7 @@
   "s7": {
     "text": [
       "Stage 7:\nWalk until you find where the images of food appear. Decipher the clues hidden in the descriptions, and piece together the letters to reveal your next move.\n\n\n谜题 7：\n走到您看到食物图片的地方。解读英文海报中的线索，拼接字母以揭示您的下一步！",
-      "image:https://bwm-bot.vercel.app/Stage7Lastest.png"
+      "image:https://bwm-bot.vercel.app/Stage7Latest.png"
     ],
     "info": ["12"],
     "key": ["beans", "豆"],
