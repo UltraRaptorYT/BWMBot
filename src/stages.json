@@ -70,7 +70,7 @@
     ],
     "info": [
       "Stone lions symbolize protection and strength. The male lion, typically on the right, holds a ball representing power, while the female, on the left, cradles a cub, symbolizing nurturing and care.\n\n石狮象征着保护和力量。通常，雄狮位于右侧，踩着一个代表权力的球，而雌狮位于左侧，抱着一只幼狮，象征着养育和照顾。",
- "image:https://bwm-bot.vercel.app/IMG-20240908-WA0041.jpg"
+      "image:https://bwm-bot.vercel.app/IMG-20240908-WA0041.jpg"
     ],
     "key": ["yolk", "蛋黄"],
     "hint": [
@@ -78,7 +78,8 @@
       "Hint 2: <span class=\"tg-spoiler\">Pay close attention to what lies beneath their feet</span>\n暗示 2：<span class=\"tg-spoiler\">仔细观察雕像脚下的东西</span>"
     ],
     "skip": [
-      "The answer was \"YOLK\".  答案是\"蛋黄\"\n\nFind the Stone Lion with the baby cub at her paws. Between her legs, you'll discover the word.\n\n找到脚边有幼崽的石狮子。她的两腿之间藏着答案。", "image:https://bwm-bot.vercel.app/sketch-1725792010756.png"
+      "The answer was \"YOLK\".  答案是\"蛋黄\"\n\nFind the Stone Lion with the baby cub at her paws. Between her legs, you'll discover the word.\n\n找到脚边有幼崽的石狮子。她的两腿之间藏着答案。",
+      "image:https://bwm-bot.vercel.app/sketch-1725792010756.png"
     ]
   },
   "s3": {
@@ -86,7 +87,10 @@
       "Stage 3:\nSeek out the <b>Wheel of Enlightenment</b>. Start at the flower and spin it clockwise. Connect the icons in order, and the letters you pass will reveal the answer!\n\n\n谜题 3：\n寻找<b>成佛之轮</b>。从花朵开始顺时针旋转。按顺序连接图标，经过的字母将揭示答案！",
       "image:https://bwm-bot.vercel.app/Stage4New.png"
     ],
-    "info": ["The <b>Eight Auspicious Symbols (八吉祥)</b> include the Dharma Wheel ☸ (representing Buddha's teachings), the Lotus Flower 🪷 (symbolizing purity), the Victory Banner ✌️🏻🏳️ (spiritual triumph), the Endless Knot 🪢 (interconnectedness), the Treasure Vessel 🏺 (spiritual abundance), the Pair of Golden Fishes 🐟🐟 (freedom), the Parasol ☂️ (protection), and the Conch Shell 🐚 (spreading the Dharma). Each symbol brings blessings, spiritual wisdom, and protection to practitioners.\n\nSpinning the <b>Dharma Wheel ☸️</b> is believed to accumulate merit, dispel negative energies, and spread Buddha's teachings. It fosters mindfulness and spiritual growth, helping individuals progress on the path to enlightenment.", "<b>八吉祥</b>符号包括：法轮 ☸️（代表佛陀的教义）、莲花 🪷（象征纯洁）、胜利幢 ✌️🏻🏳️（精神上的胜利）、吉祥结 🪢（代表万物的互联）、宝瓶 🏺（象征精神和物质上的富足）、金鱼 🐟🐟（象征自由）、宝伞 ☂️（提供保护）、法螺 🐚（象征佛法的传播）。每个符号都为修行者带来福报、智慧和保护。\n\n转动<b>法轮 ☸️</b>被认为可以积累功德、驱散负能量并传播佛陀的教义。它帮助修行者培养正念和精神成长，推动他们在觉悟的道路上不断前进。"],
+    "info": [
+      "The <b>Eight Auspicious Symbols (八吉祥)</b> include the Dharma Wheel ☸ (representing Buddha's teachings), the Lotus Flower 🪷 (symbolizing purity), the Victory Banner ✌️🏻🏳️ (spiritual triumph), the Endless Knot 🪢 (interconnectedness), the Treasure Vessel 🏺 (spiritual abundance), the Pair of Golden Fishes 🐟🐟 (freedom), the Parasol ☂️ (protection), and the Conch Shell 🐚 (spreading the Dharma). Each symbol brings blessings, spiritual wisdom, and protection to practitioners.\n\nSpinning the <b>Dharma Wheel ☸️</b> is believed to accumulate merit, dispel negative energies, and spread Buddha's teachings. It fosters mindfulness and spiritual growth, helping individuals progress on the path to enlightenment.",
+      "<b>八吉祥</b>符号包括：法轮 ☸️（代表佛陀的教义）、莲花 🪷（象征纯洁）、胜利幢 ✌️🏻🏳️（精神上的胜利）、吉祥结 🪢（代表万物的互联）、宝瓶 🏺（象征精神和物质上的富足）、金鱼 🐟🐟（象征自由）、宝伞 ☂️（提供保护）、法螺 🐚（象征佛法的传播）。每个符号都为修行者带来福报、智慧和保护。\n\n转动<b>法轮 ☸️</b>被认为可以积累功德、驱散负能量并传播佛陀的教义。它帮助修行者培养正念和精神成长，推动他们在觉悟的道路上不断前进。"
+    ],
     "key": ["jasmine", "茉莉花"],
     "hint": [
       "Hint 1: <span class=\"tg-spoiler\">Dharma Wheel</span>\n暗示 1：<span class=\"tg-spoiler\">法轮</span>",
@@ -94,7 +98,7 @@
     ],
     "skip": [
       "The answer was \"JASMINE\".  答案是\"JASMINE\"\n\nThe order of the icons are <b>Lotus Flower, Conch Shell, Endless Knot, Victory Banner, Parasol, Dharma Wheel, Golden Fish, Treasure Vessel.</b>\n\n图标的顺序是<b>莲花，法螺，吉祥结，胜利幢，宝伞，法轮，金鱼，宝瓶。</b>。",
- "image:https://bwm-bot.vercel.app/sketch-1725793736156.png"
+      "image:https://bwm-bot.vercel.app/sketch-1725793736156.png"
     ]
   },
   "s4": {
@@ -103,13 +107,17 @@
       "image:https://bwm-bot.vercel.app/Stage5.png"
     ],
     "info": [
-      "Yellow Dzambala symbolises both material and spiritual prosperity 💰✨. He helps overcome financial obstacles and guides people toward inner abundance 🌟. Often depicted with a jewel-spitting mongoose 🐾💎, he teaches that true wealth lies in generosity and compassion 💞.\n\nSo remember to supplicate(pray) sincerely to him. 🙏🏻\n\n\n黄财神象征物质与精神上的富足💰✨。他帮助消除财务障碍，引导人们走向内在的丰盛🌟。通常他手持一只吐宝鼠🐾💎，教导人们真正的财富在于慷慨与慈悲💞。\n\n所以好好向他祈求哦！🙏🏻", "image:https://bwm-bot.vercel.app/Yellow%20Dzambhala.jpeg"
+      "Yellow Dzambala symbolises both material and spiritual prosperity 💰✨. He helps overcome financial obstacles and guides people toward inner abundance 🌟. Often depicted with a jewel-spitting mongoose 🐾💎, he teaches that true wealth lies in generosity and compassion 💞.\n\nSo remember to supplicate(pray) sincerely to him. 🙏🏻\n\n\n黄财神象征物质与精神上的富足💰✨。他帮助消除财务障碍，引导人们走向内在的丰盛🌟。通常他手持一只吐宝鼠🐾💎，教导人们真正的财富在于慷慨与慈悲💞。\n\n所以好好向他祈求哦！🙏🏻",
+      "image:https://bwm-bot.vercel.app/Yellow%20Dzambhala.jpeg"
     ],
     "key": ["sesame", "芝麻"],
     "hint": [
       "Hint 1: <span class=\"tg-spoiler\">Find the Yellow Dzambhala Statue</span>\n暗示 1：<span class=\"tg-spoiler\">寻找黄财神像</span>"
     ],
-    "skip": ["The answer was \"SESAME\".  答案是\"SESAME\"\n\nThe labels inside of the Yellow Dzambala are <b>MANI JEWEL & MONGOOSE SPEWS MYRIAD TREASURE S</b>\n\n黄色黄财神里面的标签是\"<b>MANI JEWEL & MONGOOSE SPEWS MYRIAD TREASURE S</b>\"。", "image:https://bwm-bot.vercel.app/sketch-1725800068479.png"]
+    "skip": [
+      "The answer was \"SESAME\".  答案是\"SESAME\"\n\nThe labels inside of the Yellow Dzambala are <b>MANI JEWEL & MONGOOSE SPEWS MYRIAD TREASURE S</b>\n\n黄色黄财神里面的标签是\"<b>MANI JEWEL & MONGOOSE SPEWS MYRIAD TREASURE S</b>\"。",
+      "image:https://bwm-bot.vercel.app/sketch-1725800068479.png"
+    ]
   },
   "break": {
     "text": [
@@ -150,12 +158,15 @@
       "Hint 1: <span class=\"tg-spoiler\">Look for the beautiful decorations around the pictures. They will help guide you to the location.</span>\n暗示 1：<span class=\"tg-spoiler\">注意图片周围的精美装饰，它们会指引您找到位置。</span>",
       "Hint 2: <span class=\"tg-spoiler\">Shade the boxes in the correct order, and a word will be revealed.</span>\n暗示 2：<span class=\"tg-spoiler\">根据顺序填色方框，答案会显现出来。</span>"
     ],
-    "skip": ["hi"]
+    "skip": [
+      "The answer was \"ALMOND\".  答案是\"ALMOND\"\n\nThe order of the items held by the Buddhas are <b>SWORD</b> of wisdom, <b>SCRIPTURE</b> of Prajnaparamita Sutra, \n\n",
+      "image:https://bwm-bot.vercel.app/Stage6Skip.png"
+    ]
   },
   "s7": {
     "text": [
       "Stage 7:\nWalk until you find where the images of food appear. Decipher the clues hidden in the descriptions, and piece together the letters to reveal your next move.\n\n\n谜题 7：\n走到您看到食物图片的地方。解读英文海报中的线索，拼接字母以揭示您的下一步！",
-      "image:https://bwm-bot.vercel.app/Stage8.png"
+      "image:https://bwm-bot.vercel.app/Stage7Lastest.png"
     ],
     "info": ["12"],
     "key": ["beans", "豆"],
@@ -163,7 +174,11 @@
       "Hint 1: <span class=\"tg-spoiler\">P = Paragraph   W = Word   L = Letter</span>\n暗示 1：<span class=\"tg-spoiler\">P = 段落   W = 字   L = 字母</span>",
       "Hint 2: <span class=\"tg-spoiler\">The first word is \"READ\"</span>\n暗示 2：<span class=\"tg-spoiler\">下一步的第一个字是\"READ\"</span>"
     ],
-    "skip": ["hi"]
+    "skip": [
+      "The answer was \"BEANS\".  答案是\"BEANS\"\n\nLook at all the food posters, Write all the letters based on the P = <b>P</b>aragraph, W = <b>W</b>ord, L = <b>L</b>etter. It will give you the instruction \"READ THE LAST WORD FROM KACANG PUTEH\". The last word on Kacang Puteh is \"BEANS\"\n\n看所有的食物海报，根据 P = <b>段落</b>，W = <b>字</b>，L = <b>字母</b> 写出所有字母。它会给你指令“READ THE LAST WORD FROM KACANG PUTEH”。Kacang Puteh 的最后一个词是“BEANS”",
+      "image:https://bwm-bot.vercel.app/Stage7Skip.png",
+      "image:https://bwm-bot.vercel.app/Stage7Beans.jpeg"
+    ]
   },
   "s8": {
     "text": [

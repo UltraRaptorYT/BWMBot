@@ -57,10 +57,12 @@ bot.action("test_bot", async (ctx: Context) => {
 bot.action("end_break", async (ctx: Context) => {
   const username = ctx.from?.username || "";
   let stage = Object.keys(stages).indexOf("break");
-  if (stage == -1) {
+  if (stage < 0) {
     console.log("Error");
   }
   stage += 1;
+  let progress = await getCurrentProgress(username);
+  await updateCompletedTime(progress.id);
   await setUserStage(username, stage);
   let stageName = await getStageName(stage);
   const stageData = stages[stageName as keyof typeof stages] as StageType;
